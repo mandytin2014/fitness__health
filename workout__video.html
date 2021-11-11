@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness & Health</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="icon" href="./icons/icon2-removebg-preview.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/content.css" charset="utf-8">
+</head>
+<body>
+     <!-- 粉紅色大背景 -->
+<section class="bgc__pink">
+    
+
+<!-- 右側內容 -->
+<section class="body__content" style="width: 95vw;">
+    <section class="title">
+        <div class="title__content">
+            <i class="fad fa-bars title__ham"></i>
+            <img class="title__logo" src="./icons/icon__circle.png" alt="">
+            <h1 class="title__text">Fitness <br><span style="margin-left: 20px;" class="font__type">&Health</h1>
+        </div>
+        <!-- 電腦版導覽列 -->
+        <nav class="nav--pc">
+            <ul class="menu">
+                <li class="menu__item">
+                    <a target="_self" href="index.html" class="list__link">首頁</a>
+                </li>
+                <li class="menu__item">
+                    <a target="_self" href="body.html" class="list__link" ><i class="fas fa-child title__icon"></i>了解身體</a>
+                </li>
+                <li class="menu__item menu__item--col">
+                    <a target="_self" href="#" class="list__link" style="color: #FF5656;cursor: default;"><i class="fas fa-running title__icon"></i>動起來</a>
+                    <div class="dropdown__list">
+                        <a target="_self" href="workout__catalog.html" class="dropdown__list--text">運動分類</a>
+                        <a target="_self" href="#" class="dropdown__list--text">居家運動</a>
+                    </div>
+                </li>
+                <li class="menu__item">
+                    <a target="_self" href="eat.html" class="list__link"><i class="fas fa-utensils title__icon"></i>大口吃</a>
+                </li>
+                <li class="menu__item">
+                    <a target="_self" href="calories.html" class="list__link"><i class="fas fa-fire-alt title__icon"></i>熱量PK賽</a>
+                </li>
+                <li class="menu__item">
+                    <a target="_self" href="contact.html" class="list__link"><i class="fas fa-comment title__icon"></i>聯絡我們</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- 手機版導覽列 -->
+        <nav class="nav--mb">
+            <ul class="menu--mb">
+                <li class="menu__item--mb">
+                    <a target="_self" href="index.html" class="list__link--mb"><i class="fas fa-home title__icon"></i>首頁</a>
+                </li>
+                <li class="menu__item--mb">
+                    <a target="_self" href="body.html" class="list__link--mb" ><i class="fas fa-child title__icon"></i>了解身體</a>
+                </li>
+                <li class="menu__item--mb menu__item--col--mb">
+                    <span class="list__link--mb" style="color: #FF5656;"><i class="fas fa-running title__icon"></i>動起來<i class="far fa-angle-down dropdown__icon"></i></span>
+                    <div class="dropdown__list--mb">
+                        <a target="_self" href="workout__catalog.html#" class="dropdown__list--text">運動分類</a>
+                        <a target="_self" href="#" class="dropdown__list--text">居家運動</a>
+                    </div>
+                </li>
+                <li class="menu__item--mb">
+                    <a target="_self" href="eat.html" class="list__link--mb"><i class="fas fa-utensils title__icon"></i>大口吃</a>
+                </li>
+                <li class="menu__item--mb">
+                    <a target="_self" href="calories.html" class="list__link--mb"><i class="fas fa-fire-alt title__icon"></i>熱量PK賽</a>
+                </li>
+                <li class="menu__item--mb">
+                    <a target="_self" href="contact.html" class="list__link--mb"><i class="fas fa-comment title__icon"></i>聯絡我們</a>
+                </li>
+            </ul>
+        </nav>   
+    </section>
+    <!-- 部位選擇 -->
+
+    <section class="center">
+        <div style="display: inline-flex;">
+            <img class="workout__pic--pre" src="./pictures/stand.png" alt="picture">    
+        </div>
+        <div  style="display: inline-flex;">
+            <img class="workout__pic--pre" src="./pictures/smile.png" alt="picture">
+        </div>
+        <br>
+        
+    </section>        
+    <br>
+    <nav>
+        <ul class="selectbox__list">
+            <div class="subtitle__box" data-type="lower">
+                <img  class="subtitle__icon" src="https://img.icons8.com/ios/50/000000/leg.png"/>
+                <li class="selectbox__item">臀腿</li>
+            </div>
+            <div class="subtitle__box" data-type="ab">
+                <img class="subtitle__icon" src="https://img.icons8.com/external-vitaliy-gorbachev-lineal-vitaly-gorbachev/60/000000/external-abs-health-vitaliy-gorbachev-lineal-vitaly-gorbachev-1.png"/>
+                <li class="selectbox__item">腹部</li>
+            </div>
+            <div class="subtitle__box" data-type="upper">
+                <img class="subtitle__icon" src="https://img.icons8.com/ios/50/000000/weak.png"/>
+                <li class="selectbox__item">上身</li>
+            </div>
+            <div class="subtitle__box" data-type="cardio">
+                <img class="subtitle__icon" src="https://img.icons8.com/ios/50/000000/running.png"/>
+                <li class="selectbox__item">有氧</li>
+            </div>
+            <div class="subtitle__box" data-type="HIIT">
+                <img class="subtitle__icon" src="https://img.icons8.com/ios/48/000000/trampoline-park.png"/>
+                <li class="selectbox__item">間歇</li>
+            </div>
+            <div class="subtitle__box" data-type="stretch">
+                <img class="subtitle__icon" src="https://img.icons8.com/ios/50/000000/yoga.png"/>
+                <li class="selectbox__item">伸展</li>
+            </div>
+
+        </ul>
+    </nav>
+    <!-- 臀腿訓練 -->    
+        <section class="carousel__main lower" >
+            <div class="outer__frame ">
+                
+                <img class="workout__pic" src="./pictures/booty & legs/innerthigh.png" alt="">
+                <div class="workout__intro">
+                    <ul class="menulist">
+                        <li class="menu__item">針對肌群: 大腿內側</li>
+                        <li class="menu__item">特色: 不必跳躍、深蹲，優雅的折磨沉睡已久的內側肉</li>
+                        <li class="menu__item">強度: <i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i></li>
+                        <li class="menu__item">貼心提醒: 超過極限時可以側躺，照樣有效燃燒</li>
+                    </ul>
+                    <a target="_blank" href="https://www.youtube.com/watch?v=h9uZVP_qLVo"><img class="icon__go" src="./icons/go.png" alt=""></a>
+                    
+                </div>
+            </div>
+            <div class="outer__frame">
+                <img class="workout__pic" src="./pictures/booty & legs/legs.png" alt="">
+                <div class="workout__intro">
+                    <ul class="menulist">
+                        <li class="menu__item">針對肌群: 臀部、大腿內外側、小腿</li>
+                        <li class="menu__item">特色: 大量深蹲，極致燃燒整條腿和臀部</li>
+                        <li class="menu__item">強度: <i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i></li>
+                        <li class="menu__item">貼心提醒: 記得膝蓋不要超過腳尖，深蹲時背部挺直、膝蓋不要內縮</li>
+                    </ul>
+                    <a target="_blank" href="https://www.youtube.com/watch?v=LAeOJH_OIks&t=9s"><img class="icon__go" src="./icons/go.png" alt=""></a>
+                    
+                </div>
+            </div>
+            <div class="outer__frame">
+                <img class="workout__pic" src="./pictures/booty & legs/glute bridge.png" alt="">
+                <div class="workout__intro">
+                    <ul class="menulist">
+                        <li class="menu__item">針對肌群: 臀部</li>
+                        <li class="menu__item">特色: 使用翹臀圈加強臀部訓練，以免訓練成腿部肌群，沒有讓人害怕的深蹲，一路躺到尾</li>
+                        <li class="menu__item">強度: <i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i></li>
+                        <li class="menu__item">貼心提醒: 腰部不要過於用力，胸腹腿應呈現一直線，過程中務必有意識的用臀肌發力 </li>
+                    </ul>
+                    <a target="_blank" href="https://www.youtube.com/watch?v=iHBZiO5rDQ8"><img class="icon__go" src="./icons/go.png" alt=""></a>
+                    
+                </div>
+            </div>
+            <div class="outer__frame">
+                <img class="workout__pic" src="./pictures/booty & legs/booty workout.png" alt="">
+                <div class="workout__intro">
+                    <ul class="menulist">
+                        <li class="menu__item">針對肌群: 臀部</li>
+                        <li class="menu__item">特色: 不用翹臀圈，不用深蹲，對膝蓋友善</li>
+                        <li class="menu__item">強度:</i><i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i></li>
+                        <li class="menu__item">貼心提醒: 跪姿做驢子踢等動作的過程中切忌身體重心歪斜，記得保持脊椎直線並縮緊小腹</li>
+                    </ul>
+                    <a target="_blank" href="https://www.youtube.com/watch?v=p-uUnrCdhR8&t=335s"><img class="icon__go" src="./icons/go.png" alt=""></a>
+                    
+                </div>
+            </div>
+            <div class="outer__frame">
+                <img class="workout__pic" src="./pictures/booty & legs/whole legs.png" alt="">
+                <div class="workout__intro">
+                    <ul class="menulist">
+                        <li class="menu__item">針對肌群: 大腿內外側、蘿蔔小腿</li>
+                        <li class="menu__item">特色:適合初學者，有休息時間，Emi會不斷鼓勵</li>
+                        <li class="menu__item">強度: <i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i></li>
+                        <li class="menu__item">貼心提醒: 深蹲等動作不求快，重心穩而姿勢標準更能正確訓練到針對的肌群唷！</li>
+                    </ul>
+                    <a target="_blank" href="https://www.youtube.com/watch?v=t2p9KsrF8M4&t=373s"><img class="icon__go" src="./icons/go.png" alt=""></a>
+                    
+                </div>
+            </div>
+            <div class="outer__frame">
+                <img class="workout__pic" src="./pictures/booty & legs/coffee legs.png" alt="">
+                <div class="workout__intro">
+                    <ul class="menulist">
+                        <li class="menu__item">針對肌群: 大腿內、外、後側以及臀部</li>
+                        <li class="menu__item">特色: Coffee會先講解再開始動作，有來賓跟著大家一起受苦XD</li>
+                        <li class="menu__item">強度: <i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i></li>
+                        <li class="menu__item">貼心提醒: 不要把自己的腿甩來甩去，適度用核心的力量收緊，穩住重心!</li>
+                    </ul>
+                    <a target="_blank" href="https://www.youtube.com/watch?v=Rr8CEyQ3-5k&t=1075s"><img class="icon__go" src="./icons/go.png" alt=""></a>
+                    
+                </div>
+            </div>
+        </section>
+    
+
+    <!-- 腹部訓練 -->
+    <section class="carousel__main ab" >
+        <div class="outer__frame ">
+            <img class="workout__pic" src="./pictures/abs/abs+fat burn.png" alt="">
+            <div class="workout__intro">
+                <ul class="menulist">
+                    <li class="menu__item">針對肌群: 腹部</li>
+                    <li class="menu__item">特色: 想要有明顯的腹肌，體脂低是關鍵，影片兼具肌力訓練以及有氧燃脂</li>
+                    <li class="menu__item">強度: <i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i></li>
+                    <li class="menu__item">貼心提醒: 抬起脖子能夠更針對腹部肌群發力，隨時保持背部貼地避免下背受傷</li>
+                </ul>
+                <a target="_blank" href="https://www.youtube.com/watch?v=8K3tBVPaQYc"><img class="icon__go" src="./icons/go.png" alt=""></a>
+                
+            </div>
+        </div>
+        <div class="outer__frame ">
+            <img class="workout__pic" src="./pictures/abs/sixpack.png" alt="">
+            <div class="workout__intro">
+                <ul class="menulist">
+                    <li class="menu__item">針對肌群: 腹部</li>
+                    <li class="menu__item">特色: 全方位訓練，高強度到棒式變休息</li>
+                    <li class="menu__item">強度: <i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i></li>
+                    <li class="menu__item">貼心提醒: 記得膝蓋不要超過腳尖，深蹲時背部挺直、膝蓋不要內縮</li>
+                </ul>
+                <a target="_blank" href="https://www.youtube.com/watch?v=EfJ4aB_enVE"><img class="icon__go" src="./icons/go.png" alt=""></a>
+                
+            </div>
+        </div>
+        <div class="outer__frame ">
+            <img class="workout__pic" src="./pictures/abs/ab lines.png" alt="">
+            <div class="workout__intro">
+                <ul class="menulist">
+                    <li class="menu__item">針對肌群: 腹部(馬甲線)</li>
+                    <li class="menu__item">特色: 針對側腹部，同時考驗手臂的肌力</li>
+                    <li class="menu__item">強度: <i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i></li>
+                    <li class="menu__item">貼心提醒: 挑戰蜘蛛棒式動作之前，確保基本棒式動作可以撐過60秒避免腰背先受傷 </li>
+                </ul>
+                <a target="_blank" href="https://www.youtube.com/watch?v=o3mfKLCerec"><img class="icon__go" src="./icons/go.png" alt=""></a>
+                
+            </div>
+        </div>
+        <div class="outer__frame ">
+            <img class="workout__pic" src="./pictures/abs/3 mins abs .png" alt="">
+            <div class="workout__intro">
+                <ul class="menulist">
+                    <li class="menu__item">針對肌群: 腹部</li>
+                    <li class="menu__item">特色:  節奏快時間短，3min立即有感</li>
+                    <li class="menu__item">強度:</i><i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i></li>
+                    <li class="menu__item">貼心提醒: 上半身不隨意晃動，核心保持收緊，別因為節奏快而搶快，動作標準最重要</li>
+                </ul>
+                <a target="_blank" href="https://www.youtube.com/watch?v=Z-PVgN26qTQ"><img class="icon__go" src="./icons/go.png" alt=""></a>
+                
+            </div>
+        </div>
+        <div class="outer__frame ">
+            <img class="workout__pic" src="./pictures/abs/lower abs.png" alt="">
+            <div class="workout__intro">
+                <ul class="menulist">
+                    <li class="menu__item">針對肌群: 下腹部</li>
+                    <li class="menu__item">特色: 有休息時間，每個動作開始之前有講解畫面，節奏相較於Pamela比較慢</li>
+                    <li class="menu__item">強度: <i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i></li>
+                    <li class="menu__item">貼心提醒: 反向捲腹記得由核心發力，初學者容易使用腰力代償，請斟酌服用！</li>
+                </ul>
+                <a  target="_blank" href="https://www.youtube.com/watch?v=JEEG0hBNk3E&t=1s"><img class="icon__go" src="./icons/go.png" alt=""></a>
+                
+            </div>
+        </div>
+        <div class="outer__frame ">
+            <img class="workout__pic" src="./pictures/abs/standing abs.png" alt="">
+            <div class="workout__intro">
+                <ul class="menulist">
+                    <li class="menu__item">針對肌群: 腹+腰部</li>
+                    <li class="menu__item">特色: 全程站姿，腰背部不容易受傷，適合初學者</li>
+                    <li class="menu__item">強度: <i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i></li>
+                    <li class="menu__item">貼心提醒: 動作簡單，但記得收緊腹部，有意識的使用核心發力，才能有效訓練到腹肌</li>
+                </ul>
+                <a target="_blank" href="https://www.youtube.com/watch?v=QKCkO9fy9O4&t=367s"><img class="icon__go" src="./icons/go.png" alt=""></a>
+                
+            </div>
+        </div>
+    </section>
+    <!-- 上半身訓練 -->
+    <section class="carousel__main upper">
+        <div class="outer__frame">
+            <img class="workout__pic" src="./pictures/upper body/back.png" alt="">
+            <div class="workout__intro">
+                <ul class="menulist">
+                    <li class="menu__item">針對肌群: 背部</li>
+                    <li class="menu__item">特色: 一個啞鈴或一袋重物即可，有間隔休息，可以自身程度調整負重</li>
+                    <li class="menu__item">強度: <i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i></li>
+                    <li class="menu__item">貼心提醒: 別聳肩，手肘緊貼身體，不甩動啞鈴，慢動作更能精確的訓練到背部肌群!</li>
+                </ul>
+                <a target="_blank" href="https://www.youtube.com/watch?v=21rjOKYgk1U&t=3s"><img class="icon__go" src="./icons/go.png" alt=""></a>
+                
+            </div>
+        </div>
+        <div class="outer__frame">
+            <img class="workout__pic" src="./pictures/upper body/Back, Arms & Chest.png" alt="">
+            <div class="workout__intro">
+                <ul class="menulist">
+                    <li class="menu__item">針對肌群: 背部、手臂、胸</li>
+                    <li class="menu__item">特色: 徒手訓練，不必任何器具</li>
+                    <li class="menu__item">強度: <i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i></li>
+                    <li class="menu__item">貼心提醒: 海豚棒式盡量讓身體呈現V字型，訓練臂肌時，肩膀不用力，做伏地挺身時確保手掌貼地，分散全身重量，以免手腕受傷</li>
+                </ul>
+                <a target="_blank" href="https://www.youtube.com/watch?v=DHOPWvO3ZcI&t=7s"><img class="icon__go" src="./icons/go.png" alt=""></a>
+                
+            </div>
+        </div>
+        <div class="outer__frame">
+            <img class="workout__pic" src="./pictures/upper body/arms and cores.png" alt="">
+            <div class="workout__intro">
+                <ul class="menulist">
+                    <li class="menu__item">針對肌群: 手臂、核心</li>
+                    <li class="menu__item">特色: 中間有休息時間可依個人體能略過、伏地挺身有示範分兩個程度</li>
+                    <li class="menu__item">強度: <i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i></li>
+                    <li class="menu__item">貼心提醒: 窄版伏地挺身相較於寬版困難度提升不少，但更能訓練到掰掰肉! </li>
+                </ul>
+                <a target="_blank" href="https://www.youtube.com/watch?v=o3mfKLCerec"><img class="icon__go" src="./icons/go.png" alt=""></a>
+                
+            </div>
+        </div>
+        <div class="outer__frame">
+            <img class="workout__pic" src="./pictures/upper body/chest, back, biceps, shoulders.png" alt="">
+            <div class="workout__intro">
+                <ul class="menulist">
+                    <li class="menu__item">針對肌群: 胸、背、手臂二頭肌、肩膀肩膀</li>
+                    <li class="menu__item">特色:  可以把老公男朋友抓來一起，男女生都適合，依照自身程度改變啞鈴的重量</li>
+                    <li class="menu__item">強度:<i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i></li>
+                    <li class="menu__item">貼心提醒: 不甩動啞鈴，動作確實比大重量來的有效，訣竅是出力快➔到頂停頓➔慢慢收回</li>
+                </ul>
+                <a target="_blank" href="https://www.youtube.com/watch?v=Z-PVgN26qTQ"><img class="icon__go" src="./icons/go.png" alt=""></a>
+                
+            </div>
+        </div>
+        <div class="outer__frame">
+            <img class="workout__pic" src="./pictures/upper body/shoulders armpits neck.png" alt="">
+            <div class="workout__intro">
+                <ul class="menulist">
+                    <li class="menu__item">針對肌群: 手臂、肩膀、脖子</li>
+                    <li class="menu__item">特色: 站姿徒手訓練，適合初學者</li>
+                    <li class="menu__item">強度: <i class="fas fa-star icon__star"></i></li>
+                    <li class="menu__item">貼心提醒: 脖子放鬆不緊繃，過程不聳肩</li>
+                </ul>
+                <a target="_blank" href="https://www.youtube.com/watch?v=JEEG0hBNk3E&t=1s"><img class="icon__go" src="./icons/go.png" alt=""></a>
+                
+            </div>
+        </div>
+        <div class="outer__frame">
+            <img class="workout__pic" src="./pictures/upper body/arms.png" alt="">
+            <div class="workout__intro">
+                <ul class="menulist">
+                    <li class="menu__item">針對肌群: 手臂</li>
+                    <li class="menu__item">特色: 同時訓練背部和消除副乳、胸部up</li>
+                    <li class="menu__item">強度: <i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i></li>
+                    <li class="menu__item">貼心提醒: 窄版伏地挺身確實把手肘貼緊身體更有效消除掰掰肉，”拜拜”時手臂貼合才能有效剷除副乳喔!</li>
+                </ul>
+                <a target="_blank" href="https://www.youtube.com/watch?v=QKCkO9fy9O4&t=367s"><img class="icon__go" src="./icons/go.png" alt=""></a>
+                
+            </div>
+        </div>
+    </section>
+    <!-- 全身性有氧 -->
+    <section class="carousel__main cardio">
+        <div class="outer__frame">
+            <img class="workout__pic" src="./pictures/cardio/happy cardio.png" alt="">
+            <div class="workout__intro">
+                <ul class="menulist">
+                    <li class="menu__item">針對肌群: 全身的脂肪</li>
+                    <li class="menu__item">特色: 心情不好或沒動力時，跳一下就有動力了</li>
+                    <li class="menu__item">強度: <i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i></li>
+                    <li class="menu__item">貼心提醒: 手腳不協調看起來可能很滑稽，但有動到最重要，門關起來誰看的到XD</li>
+                </ul>
+                <a target="_blank" href="https://www.youtube.com/watch?v=Cw-Wt4xKD2s"><img class="icon__go" src="./icons/go.png" alt=""></a>
+                
+            </div>
+        </div>
+        <div class="outer__frame">
+            <img class="workout__pic" src="./pictures/cardio/happy dance.png" alt="">
+            <div class="workout__intro">
+                <ul class="menulist">
+                    <li class="menu__item">針對肌群: 全身的脂肪</li>
+                    <li class="menu__item">特色: 集合一系列最流行的歌曲，既有活力又性感</li>
+                    <li class="menu__item">強度: <i class="fas fa-star icon__star"></i></li>
+                    <li class="menu__item">貼心提醒: 想要加強卡路里的燃燒，抬膝跑步就努力抬更高更快，深蹲就多維持幾秒/li>
+                </ul>
+                <a target="_blank" href="https://www.youtube.com/watch?v=QPKXw8XEQiA"><img class="icon__go" src="./icons/go.png" alt=""></a>
+                
+            </div>
+        </div>
+        <div class="outer__frame">
+            <img class="workout__pic" src="./pictures/cardio/no jump cardio.png" alt="">
+            <div class="workout__intro">
+                <ul class="menulist">
+                    <li class="menu__item">針對肌群: 全身的脂肪</li>
+                    <li class="menu__item">特色: 燃燒脂肪同時訓練肌力，中間有休息時間</li>
+                    <li class="menu__item">強度: <i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i></li>
+                    <li class="menu__item">貼心提醒: 深蹲膝蓋不超過腳尖，登山式記得縮緊核心，箭步蹲踢盡量蹲低但膝蓋不碰地板 </li>
+                </ul>
+                <a target="_blank" href="https://www.youtube.com/watch?v=Fr3wagvq-9k&t=1118s"><img class="icon__go" src="./icons/go.png" alt=""></a>
+                
+            </div>
+        </div>
+        <div class="outer__frame">
+            <img class="workout__pic" src="./pictures/cardio/easy workout.png" alt="">
+            <div class="workout__intro">
+                <ul class="menulist">
+                    <li class="menu__item">針對肌群: 全身的脂肪</li>
+                    <li class="menu__item">特色: 燃脂同時增肌，May會同步講解</li>
+                    <li class="menu__item">強度:<i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i></li>
+                    <li class="menu__item">貼心提醒: May講解得夠清楚!我就廢話不多說，大家就打開耳朵聽清楚!</li>
+                </ul>
+                <a target="_blank" href="https://www.youtube.com/watch?v=DqagRc3C--s&t=369s"><img class="icon__go" src="./icons/go.png" alt=""></a>
+                
+            </div>
+        </div>
+        <div class="outer__frame">
+            <img class="workout__pic" src="./pictures/cardio/super cardio.png" alt="">
+            <div class="workout__intro">
+                <ul class="menulist">
+                    <li class="menu__item">針對肌群: 全身的脂肪</li>
+                    <li class="menu__item">特色: 無敵動感，動作變化自由，紓壓最佳方式，聚光燈會有巨星登場的錯覺</li>
+                    <li class="menu__item">強度: <i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i></li>
+                    <li class="menu__item">貼心提醒: 沒什麼好提醒的，不要high到鄰居抗議就好</li>
+                </ul>
+                <a target="_blank" href="https://www.youtube.com/watch?v=yN3GgCUmmXw"><img class="icon__go" src="./icons/go.png" alt=""></a>
+                
+            </div>
+        </div>
+        <div class="outer__frame">
+            <img class="workout__pic" src="./pictures/cardio/sunny cardio.png" alt="">
+            <div class="workout__intro">
+                <ul class="menulist">
+                    <li class="menu__item">針對肌群: 全身的脂肪</li>
+                    <li class="menu__item">特色: 一系列舞曲，性感扭起來!</li>
+                    <li class="menu__item">強度: <i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i></li>
+                    <li class="menu__item">貼心提醒: 先把害羞丟掉，帶著微笑扭就對了!</li>
+                </ul>
+                <a target="_blank" href="https://www.youtube.com/watch?v=uUWxteM9xUU&t=889s"><img class="icon__go" src="./icons/go.png" alt=""></a>
+                
+            </div>
+        </div>
+    </section>
+    <!-- 間歇運動 -->
+    <section class="carousel__main hiit">
+        <div class="outer__frame">
+            <img class="workout__pic" src="./pictures/HIIT/HIIT.jpg" alt="">
+            <div class="workout__intro">
+                <ul class="menulist">
+                    <li class="menu__item">針對肌群: 全身</li>
+                    <li class="menu__item">特色: 海星跳會有騰雲駕霧的快感! 一定要體驗</li>
+                    <li class="menu__item">強度: <i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i></li>
+                    <li class="menu__item">貼心提醒: 累到爆可以暫停一下，但不要放棄，請堅持到最後!</li>
+                </ul>
+                <a target="_blank" href="https://www.youtube.com/watch?v=uHx6nbdSlAg"><img class="icon__go" src="./icons/go.png" alt=""></a>
+                
+            </div>
+        </div>
+        <div class="outer__frame">
+            <img class="workout__pic" src="./pictures/HIIT/HIIT2.jpg" alt="">
+            <div class="workout__intro">
+                <ul class="menulist">
+                    <li class="menu__item">針對肌群: 全身</li>
+                    <li class="menu__item">特色: 一系列最累的HIIT組合，成就感爆棚</li>
+                    <li class="menu__item">強度: <i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i></li>
+                    <li class="menu__item">貼心提醒: 請睡飽有體力再挑戰，第一次做肯定像被卡車輾過，不過你放心，大家都一樣</li>
+                </ul>
+                <a target="_blank" href="https://www.youtube.com/watch?v=wGZYbAZrDxw&t=3s"><img class="icon__go" src="./icons/go.png" alt=""></a>
+                
+            </div>
+        </div>
+        <div class="outer__frame">
+            <img class="workout__pic" src="./pictures/HIIT/HIIT3.png" alt="">
+            <div class="workout__intro">
+                <ul class="menulist">
+                    <li class="menu__item">針對肌群: 全身</li>
+                    <li class="menu__item">特色: 動作多樣化，不會感到厭倦，許多動作都有不同程度的選擇</li>
+                    <li class="menu__item">強度: <i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i></li>
+                    <li class="menu__item">貼心提醒: 足夠的肌耐力能夠有更好的訓練成效，千萬別逞強!</li>
+                </ul>
+                <a target="_blank" href="https://www.youtube.com/watch?v=xlIKZKO8wao"><img class="icon__go" src="./icons/go.png" alt=""></a>
+                
+            </div>
+        </div>
+        <div class="outer__frame">
+            <img class="workout__pic" src="./pictures/HIIT/HIIT4.jpg" alt="">
+            <div class="workout__intro">
+                <ul class="menulist">
+                    <li class="menu__item">針對肌群: 全身</li>
+                    <li class="menu__item">特色: 找個夥伴一起挑戰，增添趣味和動力</li>
+                    <li class="menu__item">強度:<i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i></li>
+                    <li class="menu__item">貼心提醒: 累了就放慢速度，其他注意事項一樣認真聽May講解就好!
+                      </li>
+                </ul>
+                <a target="_blank" href="https://www.youtube.com/watch?v=M56to7gX6bE&t=58s"><img class="icon__go" src="./icons/go.png" alt=""></a>
+                
+            </div>
+        </div>
+        <div class="outer__frame">
+            <img class="workout__pic" src="./pictures/HIIT/TABATA.jpg" alt="">
+            <div class="workout__intro">
+                <ul class="menulist">
+                    <li class="menu__item">針對肌群: 全身</li>
+                    <li class="menu__item">特色: 跟著一群猛男動，沒動力都變有動力了</li>
+                    <li class="menu__item">強度: <i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i></li>
+                    <li class="menu__item">貼心提醒: 準確遵守運動20秒再休息10秒的原則，運動效果才會顯著</li>
+                </ul>
+                <a target="_blank" href="https://www.youtube.com/watch?v=UVYn8FmMbPc"><img class="icon__go" src="./icons/go.png" alt=""></a>
+                
+            </div>
+        </div>
+        <div class="outer__frame">
+            <img class="workout__pic" src="./pictures/HIIT/HIIT5.jpg" alt="">
+            <div class="workout__intro">
+                <ul class="menulist">
+                    <li class="menu__item">針對肌群: 全身</li>
+                    <li class="menu__item">特色: 短短15分鐘就燃燒80-150大卡</li>
+                    <li class="menu__item">強度: <i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i></li>
+                    <li class="menu__item">貼心提醒: 游擊隊動作確保自己已勝任棒式再挑戰，強烈建議穿鞋，大量彈跳動作，膝蓋承受的壓力相對大</li>
+                </ul>
+                <a target="_blank" href="https://www.youtube.com/watch?v=1skBf6h2ksI"><img class="icon__go" src="./icons/go.png" alt=""></a>
+                
+            </div>
+        </div>
+    </section>
+    <!-- 伸展運動 -->
+    <section class="carousel__main stretch">
+        <div class="outer__frame">
+            <img class="workout__pic" src="./pictures/stretch/full body.jpg" alt="">
+            <div class="workout__intro">
+                <ul class="menulist">
+                    <li class="menu__item">針對肌群: 全身</li>
+                    <li class="menu__item">特色: 只有音樂沒有人聲，更專注伸展不受打擾</li>
+                    <li class="menu__item">強度: <i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i></li>
+                    <li class="menu__item">貼心提醒: 不要閉氣，會令血壓上升，傷害心血管系統及大腦健康，過程慢而不過度</li>
+                </ul>
+                <a target="_blank" href="https://www.youtube.com/watch?v=g_tea8ZNk5A&t=111s"><img class="icon__go" src="./icons/go.png" alt=""></a>
+                
+            </div>
+        </div>
+        <div class="outer__frame">
+            <img class="workout__pic" src="./pictures/stretch/full body2.png" alt="">
+            <div class="workout__intro">
+                <ul class="menulist">
+                    <li class="menu__item">針對肌群: 全身</li>
+                    <li class="menu__item">特色: 每個動作都會講解，不必持續看螢幕變換動作</li>
+                    <li class="menu__item">強度: <i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i></li>
+                    <li class="menu__item">貼心提醒: 膝蓋不超過腳尖，核心穩住</li>
+                </ul>
+                <a target="_blank" href="https://www.youtube.com/watch?v=PhJAAp9v2N0"><img class="icon__go" src="./icons/go.png" alt=""></a>
+                
+            </div>
+        </div>
+        <div class="outer__frame">
+            <img class="workout__pic" src="./pictures/stretch/full body 3.png" alt="">
+            <div class="workout__intro">
+                <ul class="menulist">
+                    <li class="menu__item">針對肌群: 全身</li>
+                    <li class="menu__item">特色: 每個動作之前都有先示範再倒數開始</li>
+                    <li class="menu__item">強度: <i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i></li>
+                    <li class="menu__item">貼心提醒: 有疼痛感請立即停止，隨時記得呼吸，暖身後再做伸展，更能夠讓疲勞的肌肉得以舒緩</li>
+                </ul>
+                <a target="_blank" href="https://www.youtube.com/watch?v=a3VTQyNZ0Bo"><img class="icon__go" src="./icons/go.png" alt=""></a>
+                
+            </div>
+        </div>
+        <div class="outer__frame">
+            <img class="workout__pic" src="./pictures/stretch/full body 4.png" alt="">
+            <div class="workout__intro">
+                <ul class="menulist">
+                    <li class="menu__item">針對肌群: 全身</li>
+                    <li class="menu__item">特色: 有音樂也有Pamela跟你像朋友在聊天</li>
+                    <li class="menu__item">強度:<i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i></li>
+                    <li class="menu__item">貼心提醒: 身體反折動作不要勉強，脖子跟背部在身體不夠柔軟的狀況下容易受傷 </li>
+                </ul>
+                <a target="_blank" href="https://www.youtube.com/watch?v=_IoYLhrTBqY&t=285s"><img class="icon__go" src="./icons/go.png" alt=""></a>
+                
+            </div>
+        </div>
+        <div class="outer__frame">
+            <img class="workout__pic" src="./pictures/stretch/yoga.png" alt="">
+            <div class="workout__intro">
+                <ul class="menulist">
+                    <li class="menu__item">針對肌群: 全身</li>
+                    <li class="menu__item">特色: 單純老師講解沒有音樂，適合初學者，後面還有靜坐冥想的部分，可以好好靜心</li>
+                    <li class="menu__item">強度: <i class="fas fa-star icon__star"></i><i class="fas fa-star icon__star"></i></li>
+                    <li class="menu__item">貼心提醒: 僅僅10分鐘，沒時間不是藉口，打開瑜珈墊就對了</li>
+                </ul>
+                <a target="_blank" href="https://www.youtube.com/watch?v=T41mYCmtWls"><img class="icon__go" src="./icons/go.png" alt=""></a>
+                
+            </div>
+        </div>
+        <div class="outer__frame">
+            <img class="workout__pic" src="./pictures/stretch/man stretch.png" alt="">
+            <div class="workout__intro">
+                <ul class="menulist">
+                    <li class="menu__item">針對肌群: 全身</li>
+                    <li class="menu__item">特色: 老師是男生，伸展運動不再是女生的專利</li>
+                    <li class="menu__item">強度: <i class="fas fa-star icon__star"></i></li>
+                    <li class="menu__item">貼心提醒: 把老公、男朋友、爸爸抓來運動，都是男生就沒有藉口說動作太難了!</li>
+                </ul>
+                <a target="_blank" href="https://www.youtube.com/watch?v=L_xrDAtykMI"><img class="icon__go" src="./icons/go.png" alt=""></a>
+                
+            </div>
+        </div>
+    </section>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<img class="top" src="./icons/top.png" alt="">
+</section>
+</body>
+
+<script src="./js/app.js"></script>
+</html>

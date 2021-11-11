@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness & Health</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="icon" href="./icons/icon2-removebg-preview.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/content.css" charset="utf-8">
+</head>
+<body>
+<!-- 粉紅色大背景 -->
+<section class="bgc__pink">
+    
+    <!-- 左側目錄 -->
+    <section class="index">
+        <div class="index__content ">
+            <ul class="index__item">
+                <span class="index__text space"><li >目錄</li></span>
+                <a class="index__link"><li class="index__list" data-part="one">每日總消耗能量<br> TDEE</li></a>
+                <a class="index__link"><li class="index__list" data-part="two">基礎代謝率<br> BMR</li></a>
+                <a class="index__link"><li class="index__list" data-part="three">運動消耗<br> TEA</li></a>
+                <a class="index__link"><li class="index__list" data-part="four">食物熱效應<br> TEF</li></a>
+                <a class="index__link"><li class="index__list" data-part="five">BMR & TDEE<br> 計算機</li></a>
+            </ul>          
+            
+        </div>
+    </section>
+
+    <!-- 右側內容 -->
+    
+        <section class="body__content">
+            <section class="title">
+                <div class="title__content">
+                    <i class="fad fa-bars title__ham"></i>
+                    <img class="title__logo" src="./icons/icon__circle.png" alt="">
+                    <h1 class="title__text">Fitness <br><span class="font__type">&Health</span></h1>
+                </div>
+                <!-- 電腦版導覽列 -->
+                <nav class="nav--pc">
+                    <ul class="menu">
+                        <li class="menu__item">
+                            <a target="_self" href="index.html" class="list__link">首頁</a>
+                        </li>
+                        <li class="menu__item">
+                            <a target="_self" href="#" class="list__link" style="color: #FF5656;"><i class="fas fa-child title__icon"></i>了解身體</a>
+                        </li>
+                        <li class="menu__item menu__item--col">
+                            <a  class="list__link" style="cursor: default;"><i class="fas fa-running title__icon"></i>動起來</a>
+                            <div class="dropdown__list">
+                                <a target="_self" href="workout__catalog.html" class="dropdown__list--text">運動分類</a>
+                                <a target="_self" href="workout__video.html" class="dropdown__list--text">居家運動</a>
+                            </div>
+                        </li>
+                        <li class="menu__item">
+                            <a target="_self" href="eat.html" class="list__link"><i class="fas fa-utensils title__icon"></i>大口吃</a>
+                        </li>
+                        <li class="menu__item">
+                            <a target="_self" href="calories.html" class="list__link"><i class="fas fa-fire-alt title__icon"></i>熱量PK賽</a>
+                        </li>
+                        <li class="menu__item">
+                            <a target="_self" href="contact.html" class="list__link"><i class="fas fa-comment title__icon"></i>聯絡我們</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- 手機版導覽列 -->
+                <nav class="nav--mb">
+                <ul class="menu--mb">
+                    <li class="menu__item--mb">
+                        <a target="_self" href="index.html" class="list__link--mb"><i class="fas fa-home title__icon"></i>首頁</a>
+                    </li>
+                    <li class="menu__item--mb">
+                        <a target="_self" href="#" class="list__link--mb" style="color: #FF5656;"><i class="fas fa-child title__icon"></i>了解身體</a>
+                    </li>
+                    <li class="menu__item--mb menu__item--col--mb">
+                        <span  class="list__link--mb" style="color: #606060;cursor: default;"><i class="fas fa-running title__icon"></i>動起來<i class="far fa-angle-down dropdown__icon"></i></span>
+                        <div class="dropdown__list--mb">
+                            <a target="_self" href="workout__catalog.html" class="dropdown__list--text">運動分類</a>
+                            <a target="_self" href="workout__video.html" class="dropdown__list--text">居家運動</a>
+                        </div>
+                    </li>
+                    <li class="menu__item--mb">
+                        <a target="_self" href="eat.html" class="list__link--mb"><i class="fas fa-utensils title__icon"></i>大口吃</a>
+                    </li>
+                    <li class="menu__item--mb">
+                        <a target="_self" href="calories.html" class="list__link--mb"><i class="fas fa-fire-alt title__icon"></i>熱量PK賽</a>
+                    </li>
+                    <li class="menu__item--mb">
+                        <a target="_self" href="contact.html" class="list__link--mb"><i class="fas fa-comment title__icon"></i>聯絡我們</a>
+                    </li>
+                </ul>
+            </nav> 
+            </section>
+            <div class="pre__game">
+                <h3 class="space">你夠了解自己的身體嗎？如果你還覺得瘋狂運動 = 擁有曼妙身材的祕訣，下面的內容你一定要看........</h3>
+                <h3 class="space">不要往下滑！大家先猜猜看運動所佔的總消耗熱熱量為多少?</h3>
+                <ul class="answers">
+                    <li class="answer__item t" data-answer="0">20 ~ 30%</li>
+                    <li class="answer__item f" data-answer="1">10 ~ 15%</li>
+                    <li class="answer__item f" data-answer="1">30 ~ 35%</li>
+                    <li class="answer__item f" data-answer="1">35 ~ 40%</li>
+                </ul>
+                <br>
+                <div class="response">
+    
+                </div>
+    
+                <!-- 煙火 -->
+                <div class="fire"></div>
+    
+            </div>
+            
+            <div >
+                
+                <!-- 每日總消耗能量TDEE -->
+                <h2 id="one" class="sub__title center"><img class="subtitle__logo" src="./icons/clip-1470.png" alt="">每日總消耗能量TDEE</h2>
+                <img class="index__pic pic__center" src="./pictures/tdee.jpg" alt="picture">
+                <div class="center space"><p class="formula">TDEE = BMR + TEA + TEF <br>總熱量消耗 = 基礎代謝率＋運動消耗＋食物熱效應</p></div>
+                <!-- 基礎代謝率BMR -->
+                <h2  id="two" class="sub__title center"><img class="subtitle__logo" src="./icons/clip-123.png" alt=""> 基礎代謝率 BMR</h2>
+                <p class="center">躺著耍廢當一團會呼吸的肉，為了維持生命，身體仍會消耗能量，而年齡、體重、肌肉量、賀爾蒙都是影響基礎代謝率的關鍵。</p>
+                <!-- 基礎代謝迷思 -->
+                <h2 class="subtitle__red center sub__title" >基礎代謝率的迷思</h2>
+                <h3 class="space"> 誰說每天一定要吃到基礎代謝率？</h3>
+                <p>也許你聽過每天一定要攝取到基礎代謝率，否則肌肉會流失、基礎代謝率降低，但身體沒你想像的脆弱，現代人一餐不吃不會讓你鬧飢荒，偶爾進行斷食，身體裡仍有大量的肝醣提供能量，就算肝醣這燃料燒完了，低頭看看身體的脂肪大軍，你大可放一萬顆心。根據科學研究，斷食的好處包含：</p>
+                <div class="two__sides">
+                    <img class="pic__side" src="./pictures/food.png" alt="">
+                    <ul class="space">
+                        <li class="img__list"> 1. 減肥瘦身，改善過重、過高的血脂</li>
+                        <li class="img__list"> 2. 修復消化系統</li>
+                        <li class="img__list"> 3. 增加胰島素敏感性，幫助血糖控制</li>
+                        <li class="img__list"> 4. 減緩老化</li>
+                        <li class="img__list"> 5. 增強免疫系統</li>
+                        <li class="img__list"> 6. 提升生長激素</li>
+                        <li class="img__list"> 7. 減少發炎</li>
+                        <li class="img__list"> 8. 增加專注力</li>
+                    </ul>
+                </div>
+                <p >看到這裡是不是蠢蠢欲動想嘗試，且慢!斷食法做的不正確，反而很傷身體，因此不能心血來潮更改斷食時間或是進食期間報復性飲食！重點來了！誰不適合斷食法呢？</p>
+                <div class="two__sides">
+                    <ul>
+                        <li class="img__list">1. 高血糖/糖尿病患者：易血糖過低、暈眩。</li>
+                        <li class="img__list">2. 懷孕/哺乳媽：需要充足營養，宜少量多餐，不適合空腹太久。</li>
+                        <li class="img__list">3. 飲食失調疾病者：暴食症、厭食症患者首重先恢復正常飲食。</li>
+                        <li class="img__list">4. 胃功能不好的人：長時間空腹易引發胃炎、 胃潰瘍、胃不舒服。</li>
+                        <li class="img__list">5. 青少年/成長中孩童：此時期需要充足均衡的能量營養。</li>
+                    </ul>
+                    <img class="pic__side" src="./pictures/168.png" alt="">
+                </div>
+                <!-- 運動消耗 -->
+                <h2 id="three" class="sub__title center"><img class="subtitle__logo" src="./icons/clip-1479.png" alt=""> 運動消耗 TEA <span class="none">(Thermic Effect of Activity)</span> </h2>
+                <p >運動所佔的熱量消耗，僅僅20%?! 回想自己努力運動搞得形象盡毀的模樣，是不是覺得白費了呢？先別灰心，採用聰明的運動方式，才更能擊退頑固的脂肪!</p>
+                <img class="pic__center" src="./pictures/workout.jpg" alt="">
+                <p class="p__center" >少說廢話！ <a style="color: #FF5656;font-weight:bold ;" href="workout__video.html">Let's get started！</a></p>
+                
+                <!-- 食物熱效應 -->
+                <h2 id="four" class="sub__title center"><img class="subtitle__logo" src="./icons/fire.png" alt=""> 食物熱效應 TEF <span class="none">(Thermic Effect of Food)</span> </h2>
+                <p >人體為了消化、吸收、代謝食物，包括咀嚼、吞嚥等所消耗的熱量。
+                    飲食的營養來源分為三大類：醣類、脂肪、蛋白質，產熱效應不一樣，依序為下列...</p>
+                <h2 class="space__bg p__center"> 蛋白質30% > 醣類 6~8% > 脂肪 4%</ㄘ>
+                <h2 class="center"><i class="fas fa-crown tip__icon space"></i>懶人小撇步</h2>
+                <p class="p__center"> 蛋白質所消耗的熱量遠超過醣類和脂肪，因此飲食中提高蛋白質比例是提高TEDD的秘訣！</p>
+                <!-- BMR & TDEE計算機 -->
+                <h2 id="five" class="sub__title center"><img class="subtitle__logo" src="./pictures/calculator.png" alt="">BMR & TDEE 計算機</h2>
+                <div class="bmr__tdee">
+                    <form action="" class="side__side">
+                        <h2 class="subtitle__red center">基礎代謝率(BMR)計算機</h2>
+                        <div class="formBox">
+                            <label for="sex">性別: </label>
+                            <div class="inputbox__sex">
+                                <div class="inputbox__radio">
+                                    <input class="gender" type="radio" name="sex" id="female" value="female">
+                                    <label class="img__label" for="female"><img class="sex" src="./icons/icons8-woman-60.png" alt="">女生</label>
+                                </div>
+                                <div class="inputbox__radio">
+                                    <input class="gender" type="radio" name="sex" id="male" value="male">
+                                    <label class="img__label" for="male"><img class="sex" src="./icons/icons8-man-60.png" alt="">男生</label>
+                                </div>
+    
+                            </div>
+                        </div>
+                        <div class="formBox">
+                            <label for="age">年齡: </label>
+                            <input class="age" type="number" max="120" min="0" placeholder="請輸入年齡">
+                        </div>
+                        <div class="formBox">
+                            <label for="height">身高:  </label>
+                            <input class="height" type="number" max="250" min="50" placeholder="請輸入身高">
+                        </div>
+                        <div class="formBox">
+                            <label for="weight">體重: </label>
+                            <input class="weight" type="number" max="350" min="3" placeholder="請輸入體重">
+                        </div>
+                        <div class="center">
+                            <button type="reset" class="btn__calc center">開始計算</button>
+                        </div>
+                        <h4 class="result__bmr"></h4> 
+    
+                    </form>
+                    <div class="result__container ">
+                        <div class="result__box">
+                            <img class="subtitle__logo" src="./pictures/undraw_speech_to_text_9uir.png" alt="">
+                            <h3>討厭運動，只愛坐著<br>TDEE = <span class="sit__result "></span></h5>
+                           
+                        </div>
+                        <div class="result__box">
+                            <img class="subtitle__logo" src="./pictures/undraw_throw_down_ub2l.png" alt="">
+                            <h3>低強度運動(1~3次/週) <br> TDEE = <span class="low__result"></span></h5>
+                            
+                        </div>
+                        <div class="result__box">
+                            <img class="subtitle__logo" src="./pictures/undraw_Jogging_t14q.png" alt="">
+                            <h3>中強度運動(3~5次/週) <br> TDEE = <span class="middle__result"></span></h5>
+                           
+                        </div>
+                        <div class="result__box">
+                            <img class="subtitle__logo" src="./pictures/undraw_runner_start_x0uu.png" alt="">
+                            <h3>高強度運動(6~7次/週) <br> TDEE = <span class="high__result"></span></h5>
+                            
+                        </div>
+                        <div class="result__box">
+                            <img class="subtitle__logo" src="./pictures/undraw_healthy_habit_bh5w.png" alt="">
+                            <h3>超級高強度運動/勞力工作 <br>TDEE = <span class="intense__result"></span></h5>
+                        </div>
+                    </div>
+    
+    
+    
+                </div>
+            
+            
+            
+            </div>
+        </section>
+
+    
+    <img class="top" src="./icons/top.png" alt="">
+    </section>
+</body>
+<script src="./js/app.js"></script>
+</html>

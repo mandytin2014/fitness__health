@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness & Health</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">    <link rel="icon" href="./icons/icon2-removebg-preview.png">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./css/contact.css" charset="utf-8">
+</head>
+<body>
+    
+    <!-- 粉紅色大背景 -->
+    <section class="bgc__pink">
+        <!-- 提交表單之後的勉勵話 -->
+    <section class="bgc__submit">
+        <img class="img__submit" src="./pictures/IMG_4478.jpg" alt="">
+        <p class="text__submit">饅頭與你同在~~ <br>路途不再孤獨 <br>一起打造更完美的自己吧！</p>
+    </section>
+    <!-- 主體 -->
+    <section class="body__content">
+        <!-- 標題 -->
+      <section class="title">
+        <div class="title__content">
+            <i class="fad fa-bars title__ham"></i>
+            <img class="title__logo" src="./icons/icon__circle.png" alt="">
+            <h1 class="title__text">Fitness <br><span style="margin-left: 20px;" class="font__type">&Health</h1>
+        </div>
+        <!-- 電腦版導覽列 -->
+        <nav class="nav--pc">
+            <ul class="menu">
+                <li class="menu__item">
+                    <a target="_self" href="index.html" class="list__link">首頁</a>
+                </li>
+                <li class="menu__item">
+                    <a target="_self" href="body.html" class="list__link" ><i class="fas fa-child title__icon"></i>了解身體</a>
+                </li>
+                <li class="menu__item menu__item--col">
+                    <a target="_self"  href="#" class="list__link" style="cursor: default;"><i class="fas fa-running title__icon"></i>動起來</a>
+                    <div class="dropdown__list">
+                        <a target="_self" href="workout__catalog.html" class="dropdown__list--text">運動分類</a>
+                        <a target="_self" href="workout__video.html" class="dropdown__list--text">居家運動</a>
+                    </div>
+                </li>
+                <li class="menu__item">
+                    <a target="_self" href="eat.html" class="list__link" ><i class="fas fa-utensils title__icon"></i>大口吃</a>
+                </li>
+                <li class="menu__item">
+                    <a target="_self" href="calories.html" class="list__link" ><i class="fas fa-fire-alt title__icon"></i>熱量PK賽</a>
+                </li>
+                <li class="menu__item">
+                    <a target="_self" href="#" class="list__link" style="color: #FF5656;"><i class="fas fa-comment title__icon"></i>聯絡我們</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- 手機版導覽列 -->
+        <nav class="nav--mb">
+            <ul class="menu--mb">
+                <li class="menu__item--mb">
+                    <a target="_self" href="index.html" class="list__link--mb"><i class="fas fa-home title__icon"></i>首頁</a>
+                </li>
+                <li class="menu__item--mb">
+                    <a target="_self" href="body.html" class="list__link--mb" ><i class="fas fa-child title__icon"></i>了解身體</a>
+                </li>
+                <li class="menu__item--mb menu__item--col--mb">
+                    <span class="list__link--mb" style="cursor: default;"><i class="fas fa-running title__icon"></i>動起來<i class="far fa-angle-down dropdown__icon"></i></span>
+                    <div class="dropdown__list--mb">
+                        <a target="_self" href="workout__catalog.html" class="dropdown__list--text">運動分類</a>
+                        <a target="_self" href="workout__video.html" class="dropdown__list--text">居家運動</a>
+                    </div>
+                </li>
+                <li class="menu__item--mb">
+                    <a target="_self" href="eat.html" class="list__link--mb"><i class="fas fa-utensils title__icon"></i>大口吃</a>
+                </li>
+                <li class="menu__item--mb">
+                    <a target="_self" href="calories.html" class="list__link--mb"><i class="fas fa-fire-alt title__icon"></i>熱量PK賽</a>
+                </li>
+                <li class="menu__item--mb">
+                    <a target="_self" href="#" class="list__link--mb" style="color: #FF5656;"><i class="fas fa-comment title__icon"></i>聯絡我們</a>
+                </li>
+            </ul>
+        </nav>   
+       </section>
+
+
+
+        <!-- 表單內容 -->
+        <h2 class="subtitle">想要分享任何資訊或是想法嗎？<br>
+            
+            大聲告訴我們</h2>
+            
+     <form class="form__container">
+        <!-- 名字 -->
+        <div class="formbox">
+            <label for="name" class="form__text"><span class="star">*</span> 名字:</label>
+            <input type="text" name="name" id="name" class="input__box" placeholder="請填寫真實姓名">
+            <p class="invalid invalid__name">
+                *請填寫姓名
+            </p>   
+        </div>
+        <!-- 性別 -->
+        <div class="formbox"  style="height: 110px">
+         <label for="gender" class="form__text"><span class="star">*</span> 性別:</label>
+         <div class="box__container">
+            <div class="radiobox">
+                <input type="radio" name="gender" id="male" value="male" checked>
+                <label for="male" class="select__label radio__label">男性</label>
+            </div>
+            <div class="radiobox">
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female" class="select__label radio__label">女性</label>
+            </div>
+            <div class="radiobox">
+                <input type="radio" name="gender" id="other" value="other">
+                <label for="other" class="select__label radio__label">其他</label>
+            </div>
+        </div>
+        <p class="invalid invalid__gender">
+            *請選擇性別
+        </p>
+        </div>
+        <!-- 手機 -->
+        <div class="formbox" >
+            <label for="phone" class="form__text"><span class="star">*</span> 手機:</label>
+            <input type="tel" name="phone" id="phone" class="input__box" placeholder="請填寫手機號碼">
+            <p class="invalid invalid__phone">
+                *請輸入手機
+            </p>   
+        </div>
+        <!-- 信箱 -->
+        <div class="formbox" >
+            <label for="email" class="form__text"><span class="star">*</span> 信箱:</label>
+            <input type="email" name="email" id="email" class="input__box" placeholder="請填寫信箱">
+            <p class="invalid invalid__email">
+                *請輸入信箱
+            </p>   
+        </div>
+        <!-- 有興趣的主題 -->
+        <div class="formbox" ">
+            <label for="topic" class="form__text" >有興趣的主題:</label>
+            <div class="box__container">
+            <div class="radiobox">
+                <input type="checkbox" name="topic" id="match" value="飲食搭配">
+                <label for="match" class="select__label checkbox__label">飲食搭配</label>
+            </div>
+            <div class="radiobox">
+                <input type="checkbox" name="topic" id="knowledge" value="健康知識">
+                <label for="knowledge" class="select__label checkbox__label">健康知識</label>
+            </div>
+            <div class="radiobox">
+                <input type="checkbox" name="topic" id="plan" value="運動計畫">
+                <label for="plan" class="select__label checkbox__label">運動計畫</label>
+            </div>
+            <div class="radiobox">
+                <input type="checkbox" name="topic" id="recipe" value="健身食譜">
+                <label for="recipe" class="select__label checkbox__label">健身食譜</label>
+            </div>
+            </div>
+        </div>
+        <!-- 健身動機 -->
+        <div class="formbox" >
+            <label for="motivation" class="form__text">健身動機:</label>
+            <div class="box__container">
+            <div class="radiobox">
+                <input type="checkbox" name="motivation" id="health" value="健康著想">
+                <label for="health" class="select__label checkbox__label">健康著想</label>
+            </div>
+            <div class="radiobox">
+                <input type="checkbox" name="motivation" id="love" value="熱愛健身">
+                <label for="love" class="select__label checkbox__label">熱愛健身</label>
+            </div>
+            <div class="radiobox">
+                <input type="checkbox" name="motivation" id="fit" value="計畫瘦身">
+                <label for="fit" class="select__label checkbox__label">計畫瘦身</label>
+            </div>
+            <div class="radiobox">
+                <input type="checkbox" name="motivation" id="time" value="太多時間">
+                <label for="time" class="select__label checkbox__label">太多時間</label>
+            </div>
+        </div>
+        </div>
+        <!-- 我想說 -->
+        <div class="formbox">
+            <label for="word" class="form__text">我想說:</label>
+            <textarea class="input__box" name="word" id="word"   placeholder="寫下任何你想說的話!"></textarea>
+        </div>
+        <div class="formbox">
+            <button type="submit" class="submit__btn">提交表單</button>
+        </div>
+        
+        
+        
+        
+    </form>
+
+
+
+
+  </section>
+  <img class="top" src="./icons/top.png" alt="">
+</section>
+
+    
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="./js/contact.js"></script>
+</html>
