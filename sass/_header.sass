@@ -1,0 +1,145 @@
+
+.menu--mb
+    align-items: flex-end
+    padding:  1rem 0 
+    position: relative
+    right: 20px
+    display: none
+    @media screen and ( min-width: 1000px )
+        display: none !important
+        
+        
+.menu__item--mb
+    cursor: pointer
+    text-align: center
+    &:hover > .list__link--mb
+        color:  $color__sub--blue--light
+        
+.list__link--mb, .dropdown__list--text
+    padding-left: 2rem
+    font-size: 16px
+    font-weight: 550
+    color: $color__grayscale--dark
+    transition: .3s
+    position: relative
+    width: 100%
+.title__icon
+    margin-right: .75rem
+        
+.dropdown__list--mb
+    display: none
+    @include flexbox(column)
+    
+.dropdown__icon
+    position: absolute
+    left: 120%
+    top: 12%
+    
+.dropdown__list--text
+    padding-left: 55px
+    font-size: 14px
+    &:hover
+        background-color: #daf4ff
+
+// 導覽列電腦版
+.nav--pc
+    width: 100%
+    .menu
+        margin-top: 1rem
+        display: flex
+        justify-content: space-around
+        // width: 100%
+        flex-wrap: wrap
+        position: relative
+        @media screen and ( max-width: 1000px  )
+            display: none
+      
+    .menu__item
+        list-style: none   
+    
+        &:hover > .list__link
+            color: $color__sub--blue--light
+            
+    .list__link, .dropdown__list--text 
+        text-decoration: none
+        font-size: 24px
+        font-weight: bold
+        color: $color__grayscale--dark
+        transition: .3s
+    .title__icon
+        display: none  
+    .dropdown__list
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        width: 90px
+        max-height: 0
+        height: auto
+        transition: .5s
+        overflow: hidden 
+        background-color: $color__grayscale--light  
+    .menu__item--col
+        position: relative   
+        cursor: pointer
+    .menu__item--col:hover > .dropdown__list
+        max-height: 600px
+        opacity: 1   
+        background-color: #fff
+        @media screen and ( max-width: 750px )
+            display: none
+    .dropdown__list--text
+        @include flexbox(column)
+        padding: 2px 0
+        font-size: 15px
+        &:hover
+            background-color: #daf4ff
+// 標題跟logo
+.title
+    position: sticky
+    display: block
+    flex-direction: column
+    align-items: center
+    justify-content: space-around
+    padding-bottom: 30px
+    background-color: #fff
+    width: 100%
+    top: 0
+    z-index: 10  
+    margin-bottom: 1rem
+    .title__ham
+        position: absolute
+        color: rgb(255, 154, 154)
+        font-size: 25px
+        right: 50px
+        display: none
+        @media screen and ( max-width: 1000px )
+            display: block
+    .change__color
+        color:  $color__grayscale--normal
+   
+    .title__content
+        position: relative
+        min-height: 130px
+        width: 100%
+        display: flex
+        align-items: center
+        justify-content: center
+        padding-top: .5rem
+        z-index: 11
+    .title__logo
+        width: 120px
+        @media screen and ( max-width:750px )
+            width: 80px
+    
+    .font__type
+        margin-top: 1rem
+    .title__text, .font__type
+        font-weight: bold
+        letter-spacing: 25px
+        color: $color__main--red
+        margin-left: 2rem
+        font-size: 40px
+        @media screen and (max-width:1000px)
+            font-size: 2.25rem
+        @media screen and ( max-width: 750px )
+            display: none

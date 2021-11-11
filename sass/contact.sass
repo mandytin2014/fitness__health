@@ -1,0 +1,199 @@
+@import ./_variable
+@import ./_header
+*
+    line-height: 45px
+html
+    height: 100%
+.bgc__submit
+    position: absolute
+    bottom: 0
+    left: 0
+    z-index: -10
+    width: 100vw
+    height: 100vh
+    background-color: #fff
+    display: flex
+    align-items: center
+    justify-content: center
+    opacity: 0
+.bgc__submit--active
+    opacity: 1
+    @include flexbox(row)
+    animation: fadeout 6s ease-in 
+
+@keyframes fadeout
+    0%
+        opacity: 0
+        z-index: 100
+    5%
+        opacity: 1 
+
+    80%
+        opacity: 0.9
+ 
+    100%
+        opacity: 0
+        z-index: -10
+        
+        
+.img__submit
+    width: 32vw
+    height: 90vh
+.text__submit
+    line-height: 70px
+    font-size: 45px
+    margin-left: 2rem
+
+
+// 粉紅色背景
+.bgc__pink
+    background: $color__sub--pink--bgc
+    position: relative
+.body__content  
+    margin: auto
+    background-color: #fff
+    width: 90%
+
+.subtitle
+    font-weight: bold
+    text-align: center
+    line-height: 40px
+    margin: 2rem 1rem
+    @media screen and ( max-width:420px  )
+        font-size: 18px
+.formbox
+    display: flex
+    flex-direction: column
+    margin: auto
+    width: 700px
+    margin: 1.75rem auto
+    @media screen and ( max-width: 1200px )
+        width: 580px
+    @media screen and ( max-width: 850px )
+        width: 500px
+    @media screen and ( max-width: 650px )
+        width: 400px
+    @media screen and ( max-width: 550px )
+        width: 75vw
+        
+.form__text
+    font-size: 30px
+    font-weight: bold
+    @media screen and ( max-width: 750px )
+        font-size: 24px
+.input__box
+    font-size: 20px
+    background-color: $color__main--pink
+    border: none
+    outline: none
+    border-radius: 10px
+    padding: 0.35rem 0.75rem
+    color: $color__grayscale--dark
+    margin: 1rem 0 0.25rem 0
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2)
+    @media screen and ( max-width: 750px  )
+        padding: 0.1rem 0.75rem
+        font-size: 16px
+.box__container
+    display: flex
+    margin: 1rem 0 0rem 0
+    justify-content: space-between
+    flex-wrap: wrap
+    @media screen and ( max-width: 370px )
+        margin: 0
+        display: grid
+        grid-template-columns: repeat(2,1fr)
+
+        
+.select__label
+    font-size: 22px
+    @media screen and ( max-width: 750px )
+        font-size: 18px
+
+// 改變radio樣式
+input[type="radio"]
+    visibility: hidden
+.radiobox
+    margin-left: 1.5rem
+    @media screen and ( max-width: 680px  )
+        margin: 0 0.5rem
+.radio__label
+    position: relative
+.radio__label::before
+    position: absolute
+    content: ""
+    width: 15px
+    height: 15px
+    border-radius: 50%
+    border: 2px solid $color__grayscale--normal
+    display: inline-block
+    left: -35px
+    top: 50%
+    transform: translateY(-50%)
+    background-color: #fff
+    box-shadow: inset 0 0 0 2px #fff
+    @media screen and ( max-width: 680px  )
+        left: -25px
+    
+input[type="radio"]:focus + .radio__label::before
+    
+input[type="radio"]:checked + .radio__label::before
+    background-color: $color__hint
+    border: 2px solid yellow
+// checkbox樣式改變
+
+.checkbox__label
+    position: relative
+input[type="checkbox"]
+    visibility: hidden
+.checkbox__label:before
+    content: ""
+    width: 15px
+    height: 15px
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    left: -30px
+    background-color: $color__hint
+    display: inline-block
+    @media screen and ( max-width: 650px )
+        left: -20px
+input[type="checkbox"]:checked + .checkbox__label::before
+    content: "\f00c"
+    font-family: "Font Awesome 5 Free"
+    font-size: 20px
+    font-weight: 900
+    line-height: 15px
+    color: $color__sub--blue--lighter
+input[type="checkbox"]:checked + .checkbox__label
+    color: $color__sub--blue--light
+    font-weight: bold
+
+// 提交表單按鈕
+.submit__btn
+    width: 130px
+    margin: 2rem auto
+    border-radius: 10px
+    background-color: $color__hint
+    border: none
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2)
+    font-size: 18px
+    font-weight: bold
+    padding: 0.1rem 0.35rem
+    @media screen and ( max-width: 600px )
+        font-size: 15px
+        line-height: 40px
+        width: 120px
+        height: 40px
+
+    &:focus
+        background-color: $color__sub--blue--lighter
+
+
+// 空白輸入提示
+.invalid
+    color: $color__main--red
+    font-size: 14px
+    display: none
+.invalid__active
+    display: block

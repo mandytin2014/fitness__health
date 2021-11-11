@@ -1,0 +1,513 @@
+@import ./_variable
+@import ./_header
+
+// 消失
+.none
+    @media screen and ( max-width: 630px )
+        display: none
+
+//  圖文分兩邊
+.two__sides
+    @include flexbox(row)
+    justify-content: center
+    margin: 2rem 0
+// 圖片置中/ 按鈕置中
+.pic__center
+    margin: 1rem auto
+    display: flex
+    width: 300px
+    @media screen and ( max-width: 400px )
+        width: 200px
+
+// 橘色太陽
+.sun__icon
+    margin-right: 10px
+
+// 目錄
+.index
+    position: sticky
+    margin-left: 2rem
+    color: $color__grayscale--dark
+    top: 15px
+    height: 500px
+
+    @media screen and ( max-width: 1000px  )
+        display: none
+.index__text
+    font-weight: bold
+    font-size: 26px
+
+.index__item
+    @include flexbox(column)
+    position: sticky
+.index__link
+    color: $color__grayscale--dark
+    font-weight: bold
+    font-size: 15px
+    border-bottom: 1px solid $color__grayscale--normal
+    transition: all ease-in 1.5s
+  
+.index__list
+    text-align: center
+    transition: .2s
+    padding: 5px
+    width: 120px
+    
+    &:hover
+        background-color: #daf4ff    
+
+/*內容*/
+.bgc__pink
+    background-color: $color__sub--pink--bgc
+    display: flex
+    justify-content: space-between
+    width: 100vw
+.body__content
+    padding: 0 60px
+    width: 1500px
+    margin: 0 5rem
+    letter-spacing: 2px
+    background-color: #fff
+    @media screen and ( max-width: 1350px )
+        width: 1000px
+    @media screen and ( max-width: 1250px )
+        width: 900px
+    @media screen and ( max-width: 1200px )
+        width: 850px
+    @media screen and ( max-width: 1100px )
+        margin: auto
+        width: 75%
+    @media screen and ( max-width: 1000px )
+        margin: auto
+        width: 95%
+        padding: 0 8px
+    // ==========================================================================================================
+    // 了解身體
+    .pre__game
+        @include flexbox(column)
+    .answers
+        display: grid
+        grid-template-columns: repeat(4,1fr)
+        list-style: none
+        @media screen and ( max-width: 700px )
+            grid-template-columns: repeat(2,1fr)
+    .answer__after
+        @include flexbox(row)
+        
+    .answer__item
+        cursor: pointer
+        margin: 1rem
+        padding: 5px 15px
+        border-radius: 15px
+        font-size: 20px
+        transition: .3s
+        background-color: $color__sub--pink
+        font-weight: bold
+        &:hover
+            background: $color__hint
+            color: $color__main--blue
+            transform: scale(1.1)
+            
+
+    // 答題的回饋
+    .response__t, .response__f
+        font-size: 20px
+        color: $color__grayscale--dark
+        @include flexbox(row)
+        flex-wrap: nowrap
+    .response__t
+        color: $color__main--red
+        
+    .response__icon
+        font-size: 30px
+        -webkit-animation: bigger 1.3s 4.5s forwards 
+        @keyframes bigger
+            0%
+                transform: scale(0.75)
+            50%
+                transform: scale(1.5)
+            100%
+                transform: scale(1)
+                
+
+    // 煙火
+    #container
+        width: 100vw
+        height: 200%
+        overflow: hidden
+        top: 0
+        left: 0
+        position: absolute
+        visibility: hidden
+        animation: container 4s  ease-in  1
+        z-index: 11
+        @keyframes container
+            0%
+                background: black
+                visibility: visible           
+            90%
+                background: $color__grayscale--dark
+            100%
+                display: none           
+    // 先  
+    #firecracker
+        position: absolute
+        right: 2vw
+        bottom: 45vh
+        animation: firecracker 3s forwards 
+        visibility: hidden
+        z-index: 20
+        @media screen and ( max-width: 500px )
+            left: 5%
+        @keyframes firecracker 
+            0%
+                transform: scale(0)
+
+                visibility: visible 
+  
+            100% 
+                transform: scale(0.5)  
+                
+    // 後  
+    #fireworks
+        position: absolute
+        left: 20%
+        bottom: 65%   
+        animation: fireworks 3.25s 1.2s forwards 
+        visibility: hidden
+        z-index: 11
+        @media screen and ( max-width: 500px )
+            left: -20%
+        @keyframes fireworks 
+            0%
+                transform: scale(0)  
+                visibility: visible          
+            80%
+                transform: scale(0.8) 
+                // right: 35%          
+            100%
+                opacity: 0   
+
+ 
+// TDEE
+.sub__title
+    color: $color__main--blue
+    font-size: 24px
+    font-weight: 700
+    margin: 2rem 0
+    @media screen and ( max-width: 390px )
+        font-size: 20px
+        
+.index__pic
+    width: 500px
+    @media screen and ( max-width: 670px )
+        max-width: 300px
+    
+.formula 
+    background-color: $color__hint
+    width: 700px
+    border-radius: 20px
+    text-align: center
+    color: $color__sub--blue--light
+    font-size: 20px
+    font-weight: bold
+    padding: 1rem
+    @media screen and ( max-width: 700px  )
+        font-size: 18px
+
+.subtitle__red
+    color: $color__main--red
+    font-weight: bolder
+    font-size: 24px
+    @media screen and ( max-width: 450px )
+        font-size: 20px
+
+.img__list
+    font-size: 18px
+
+.pic__side
+    width: 400px
+    margin: 1rem 2rem
+    @media screen and ( max-width: 800px  )
+        width: 250px
+
+.subtitle__logo
+    width: 40px
+    height: 40px
+    margin-right: .5rem           
+        
+.tip__icon
+    font-size: 35px
+    color: yellow
+      
+
+// BMR計算機
+.bmr__tdee
+    @include flexbox(row)
+    align-items:  flex-start
+    justify-content: space-evenly  
+    
+.side__side
+    border: 2px solid $color__main--pink
+    border-radius: 30px
+    padding: 1.5rem 2rem
+    max-height: 700px
+    width: 360px
+    background-color: $color__main--pink
+    margin-bottom: 10px
+    @media screen and ( max-width: 450px )
+        padding: .75rem
+        width: 280px
+.formBox
+    display: flex
+    flex-direction: column 
+    justify-content: flex-start
+    margin: 1rem 0
+.inputbox__sex
+    display: grid
+    grid-template-columns: repeat(2,1fr)
+    grid-gap: 2px
+.inputbox__radio
+    position: relative
+input[type="radio"]
+    opacity: 0
+input[type="text"] , input[type="number"]
+    padding: 1px 20px
+    width: 300px
+    height: 35px
+    outline: none
+    border: 1px solid $color__grayscale--normal
+    border-radius: 30px
+    color: $color__grayscale--dark
+    @media screen and ( max-width: 450px )
+        width: 250px
+.img__label
+    @include flexbox(row)
+    position: absolute
+    top: 0
+    left: -18px
+.sex
+    width: 40px
+label,input
+    font-size: 16px
+    @media screen and ( max-width: 450px )
+        font-size: 14px
+        
+.img__label:before  
+    margin: 0 20px   
+    content: ""
+    display: inline-block
+    width: 15px
+    height: 15px
+    border-radius: 50%
+    border: 1px solid $color__grayscale--dark
+    background-color: #fff
+input[type="radio"]:checked + .img__label:before
+    background-color: $color__sub--blue--lighter
+    box-shadow: inset 0 0 0 2px #fff
+    border: 1px solid $color__sub--blue--lighter
+input[type="radio"]:active + .img__label:before
+    border: 1px solid $color__grayscale--normal
+
+.btn__calc
+    cursor: pointer
+    width: 120px
+    margin: 5px 0
+    border-radius: 30px
+    border: none
+    background-color: #acdcff
+    color: $color__grayscale--dark
+    padding: 0 5px
+    font-weight: bold
+    font-size: 14px
+
+// tdee計算機
+.result__container
+    display: none
+.result__box
+    @include flexbox(row) 
+    border: 5px solid $color__main--pink
+    border-radius: 30px
+    margin-bottom: 1rem
+    padding: 0.5rem
+    
+
+.result__bmr
+    color: $color__main--blue
+    margin-left: 10px
+    font-size: 20px
+    @include flexbox(column)
+    text-align: center
+.sit__result, .low__result, .middle__result, .high__result, .intense__result
+    color: $color__main--blue
+    font-size: 20px
+
+
+// 動起來--運動分類========================================================================================
+
+.pre
+    
+    margin: 0 auto
+    width: 80%
+.menu__list--w
+    line-height: 55px
+    font-size: 16px
+    @media screen and ( max-width: 350px  )
+        font-size: 14px
+.two__sides--w
+    display: flex
+    margin: auto
+    width: 100%
+    justify-content: space-around
+    @media screen and ( max-width: 750px )
+        @include flexbox(column)
+.pic__side--w
+    width: 35vw
+    height: 28vw
+    @media screen and ( max-width: 750px )
+        width: 50vw
+        height: 40vw
+        
+.two__sides--ww
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+.sub__list
+    font-size: 18px
+// ==========================================================================================================
+// 動起來-----運動影片 
+.workout__pic--pre
+    width: 250px
+    @media screen and ( max-width: 700px )
+        width: 200px
+    @media screen and ( max-width: 450px)
+        width: 150px
+    @media screen and ( max-width: 290px)
+        width: 120px
+        
+.workout__text--pre   
+    text-align: center
+    margin: 1rem 0 
+        
+    
+// ==========================================================================================================
+// 運動分類選擇
+.active
+    display: block
+.inactive
+    display: none
+.selectbox__list
+    display: grid
+    grid-template-columns: repeat(6,1fr)
+    grid-gap: 10px
+    justify-content: center
+    @media screen and ( max-width: 800px)
+        grid-template-columns: repeat(3,1fr)
+.subtitle__box
+    background-color: #e6e6ff
+    border-radius: 50%
+    @include flexbox(column)
+    padding: 0.2rem
+    margin: 1rem auto
+    cursor: pointer
+    width: 95px
+    height: 95px
+    transition: 0.3s all 
+    @media screen and ( max-width: 600px )
+        width: 75px
+        height: 75px
+.subtitle__box--click
+    background-color: $color__main--pink
+        
+    
+.selectbox__item
+    @include flexbox(row)
+    text-align: center
+    color: $color__grayscale--black
+    font-weight: bold
+    border-radius: 3px
+    font-size: 18px
+    @media screen and ( max-width: 600px )
+        font-size: 14px
+.subtitle__icon
+    width: 30px
+    marging: 0.2rem
+    
+
+.title__workout
+    text-align: center
+    @media screen and ( max-width: 1000px )
+        display: none
+.carousel__main
+    @include flexbox(row)
+    justify-content: space-around
+    margin-top: 2rem
+.outer__frame
+    position: relative
+    margin: 2.5rem 0
+    @media screen and ( max-width: 1000px )
+        margin:  0
+
+
+.workout__pic
+    width: 350px
+    height: 210px
+    transition: 0.5s
+    @media screen and ( max-width: 500px )
+        width: 300px
+        height: 180px
+    &:hover
+        transform: scale(1.01)
+        
+.workout__intro
+    transition: 0.5s all ease-in-out
+    position: absolute
+    opacity: 0
+    left: 0px
+    bottom: 12px
+    background-color: #ffcecee5
+    padding: .5rem
+    font-size: 12px
+    width: 355px
+    height: 215px
+    @media screen and ( max-width: 500px )
+        width: 305px
+        height: 185px
+.show
+    opacity: 1
+
+.menulist
+    vertical-align: middle
+.menu__item
+    line-height: 35px
+    font-size: 14px
+    @media screen and ( max-width: 500px )
+        line-height: 25px
+        font-size: 13px
+.bold   
+    font-weight: bolder
+.icon__star
+    color: $color__hint
+    opacity: 1
+    margin: 3px
+  
+
+       
+        
+    
+
+ 
+    
+    
+
+    
+
+
+
+
+
+
+
+
+
+
