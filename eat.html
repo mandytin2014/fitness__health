@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base target="__blank">
+    <title>Fitness & Health</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">    <link rel="icon" href="./icons/icon2-removebg-preview.png">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/eat.css" charset="utf-8">
+</head>
+<body>
+
+<!-- 粉紅色大背景 -->
+<section class="bgc__pink">
+    <!-- 內容 -->
+    <section class="body__content">
+        <!-- 標題 -->
+      <section class="title">
+          <div class="title__content">
+                <i class="fad fa-bars title__ham"></i>
+              <img class="title__logo" src="./icons/icon__circle.png" alt="">
+              <h1 class="title__text">Fitness <br><span style="margin-left: 20px;" class="font__type">&Health</h1>
+          </div>
+          <!-- 電腦版導覽列 -->
+          <nav class="nav--pc">
+              <ul class="menu">
+                  <li class="menu__item">
+                      <a target="_self" href="index.html" class="list__link">首頁</a>
+                  </li>
+                  <li class="menu__item">
+                      <a target="_self" href="body.html" class="list__link" ><i class="fas fa-child title__icon"></i>了解身體</a>
+                  </li>
+                  <li class="menu__item menu__item--col">
+                      <a class="list__link" style="cursor: default;"><i class="fas fa-running title__icon"></i>動起來</a>
+                      <div class="dropdown__list">
+                          <a target="_self" href="workout__catalog.html" class="dropdown__list--text">運動分類</a>
+                          <a target="_self" href="workout__video.html" class="dropdown__list--text">居家運動</a>
+                      </div>
+                  </li>
+                  <li class="menu__item">
+                      <a target="_self" href="#" class="list__link" style="color: #FF5656;"><i class="fas fa-utensils title__icon"></i>大口吃</a>
+                  </li>
+                  <li class="menu__item">
+                      <a target="_self" href="calories.html" class="list__link"><i class="fas fa-fire-alt title__icon"></i>熱量PK賽</a>
+                  </li>
+                  <li class="menu__item">
+                      <a target="_self" href="contact.html" class="list__link"><i class="fas fa-comment title__icon"></i>聯絡我們</a>
+                  </li>
+              </ul>
+          </nav>
+          <!-- 手機版導覽列 -->
+          <nav class="nav--mb">
+              <ul class="menu--mb">
+                  <li class="menu__item--mb">
+                      <a target="_self" href="index.html" class="list__link--mb"><i class="fas fa-home title__icon"></i>首頁</a>
+                  </li>
+                  <li class="menu__item--mb">
+                      <a target="_self" href="body.html" class="list__link--mb" ><i class="fas fa-child title__icon"></i>了解身體</a>
+                  </li>
+                  <li class="menu__item--mb menu__item--col--mb">
+                      <span class="list__link--mb" style="cursor: default;"><i class="fas fa-running title__icon"></i>動起來<i class="far fa-angle-down dropdown__icon"></i></span>
+                      <div class="dropdown__list--mb">
+                          <a target="_self" href="workout__catalog.html" class="dropdown__list--text">運動分類</a>
+                          <a target="_self" href="workout__video.html" class="dropdown__list--text">居家運動</a>
+                      </div>
+                  </li>
+                  <li class="menu__item--mb">
+                      <a target="_self" style="color: #FF5656;" href="#" style="color: #FF5656;" class="list__link--mb"><i class="fas fa-utensils title__icon"></i>大口吃</a>
+                  </li>
+                  <li class="menu__item--mb">
+                      <a target="_self" href="calories.html" class="list__link--mb"><i class="fas fa-fire-alt title__icon"></i>熱量PK賽</a>
+                  </li>
+                  <li class="menu__item--mb">
+                      <a target="_self" href="contact.html" class="list__link--mb"><i class="fas fa-comment title__icon"></i>聯絡我們</a>
+                  </li>
+              </ul>
+          </nav>   
+      </section>
+      <h2 class="sub__title">今晚，我想來點......</h2>
+      <section class="food__select">
+          <div class="select__box">
+              <input type="radio" name="food" id="breakfast" >
+              <label for="breakfast">營養早餐</label>
+          </div>
+          <div class="select__box">
+              <input type="radio" name="food" id="drink">
+              <label for="drink">活力飲品</label>
+          </div>
+          <div class="select__box">
+              <input type="radio" name="food" id="protein">
+              <label for="protein">充肌蛋白</label>
+          </div>
+          <div class="select__box">
+              <input type="radio" name="food" id="carbonhydrate">
+              <label for="carbonhydrate">我愛碳水</label>
+          </div>
+          <div class="select__box">
+              <input type="radio" name="food" id="sweet">
+              <label for="sweet">甜密滋味</label>
+          </div>
+      </section>
+      
+      <!-- 食物大集合 -->
+
+      <!-- breakfast -->
+      <form class="breakfast food"   data-type="breakfast">
+          <ul class="food__box breakfast" >
+              <li class="container" >
+                  <h3>墨西哥時蔬捲餅</h3>
+                  <a target="_blank" href="https://www.loveandlemons.com/roasted-sweet-potato-poblano-breakfast-tacos/">
+                  <img class="food__img" src="./pictures/food/breakfast/taco.png" alt="">
+                  </a>
+                 
+                  <h3 class="pointUp">材料<i class="fal fa-hand-point-up "></i></h3>
+                  <div class="ingredient__box">
+                      <ol  class="ingredient__item">
+                          <li class="indredient__list">地瓜</li>
+                          <li class="indredient__list">玉米粒</li>
+                          <li class="indredient__list">波布拉諾辣椒</li>
+                          <li class="indredient__list">蛋</li>
+                          <li class="indredient__list">墨西哥餅</li>
+                          <li class="indredient__list">酪梨</li>
+                          <li class="indredient__list">綠沙沙醬</li>
+                          <li class="indredient__list">菜苗</li>
+                      </ol>
+           
+                  </div>
+              </li>
+
+          </ul>
+          <ul class="food__box breakfast"data-type="breakfast">
+              <li class="container" >
+                  <h3 style="text-align: center;">椰絲水果優格燕麥粥</h3>
+                  <a target="_blank" href="https://icook.tw/recipes/113799">
+                  <img class="food__img" src="./pictures/food/breakfast/椰絲水果優格燕麥粥.jpg" alt="">
+                  </a>
+
+                  <h3 class="pointUp">材料<i class="fal fa-hand-point-up "></i></h3>
+                  <div class="ingredient__box">
+                      <ul class="ingredient__item">
+                          <li class="indredient__list">燕麥片</li>
+                          <li class="indredient__list">無糖優格</li>
+                          <li class="indredient__list">水果</li>
+                          <li class="indredient__list">椰絲</li>
+                      </ul>
+           
+                  </div>
+              </li>
+
+          </ul>
+          <ul class="food__box breakfast"data-type="breakfast">
+              <li class="container" >
+                  <h3 style="text-align: center;">鮪魚起司<br> 蛋鷹嘴豆蔥夾餅</h3>
+                  <a target="_blank" href="https://www.instagram.com/p/CQqFFt-AE7L/">
+                  <img class="food__img" src="./pictures/food/breakfast/鮪魚三明治.png" alt="">
+                  </a>
+                
+                 
+                  <h3 class="pointUp">材料<i class="fal fa-hand-point-up "></i></h3>
+                  <div class="ingredient__box">
+                      <ul class="ingredient__item">
+                          <li class="indredient__list">鷹嘴豆粉</li>
+                          <li class="indredient__list">水煮鮪魚</li>
+                          <li class="indredient__list">雞蛋</li>
+                          <li class="indredient__list">橄欖油</li>
+                          <li class="indredient__list">蔥</li>
+                      </ul>
+           
+                  </div>
+              </li>
+
+          </ul>
+          <ul class="food__box breakfast"data-type="breakfast">
+              <li class="container" >
+                  <h3 style="text-align: center;">彩虹優格碗</h3>
+                  <a target="_blank" href="https://www.barrelleaf.com/rainbow-yogurt-bowl/">
+                  <img class="food__img" src="./pictures/food/breakfast/yogurt bowl.jpg" alt="">
+                  </a>
+                
+                 
+                  <h3 class="pointUp">材料<i class="fal fa-hand-point-up "></i></h3>
+                  <div class="ingredient__box">
+                      <ul class="ingredient__item">
+                          <li class="indredient__list">奇亞籽</li>
+                          <li class="indredient__list">豆奶或堅果奶</li>
+                          <li class="indredient__list">優格</li>
+                          <li class="indredient__list">楓糖漿</li>
+                          <li class="indredient__list">新鮮水果</li>
+                          <li class="indredient__list">燕麥穀片</li>
+                          <li class="indredient__list">堅果</li>
+                      </ul>
+           
+                  </div>
+              </li>
+
+          </ul>
+          <ul class="food__box breakfast"data-type="breakfast">
+              <li class="container" >
+                  <h3 style="text-align: center;">鮮蔬菇菇歐姆蛋</h3>
+                  <a target="_blank" href="https://icook.tw/recipes/262833">
+                  <img class="food__img" src="./pictures/food/breakfast/egg.jpg" alt="">
+                  </a>
+                
+                 
+                  <h3 class="pointUp">材料<i class="fal fa-hand-point-up "></i></h3>
+                  <div class="ingredient__box">
+                      <ul class="ingredient__item">
+                          <li class="indredient__list">雪白菇</li>
+                          <li class="indredient__list">青花椰</li>
+                          <li class="indredient__list">洋蔥</li>
+                          <li class="indredient__list">番茄</li>
+                          <li class="indredient__list">雞蛋</li>
+                          <li class="indredient__list">鮮奶</li>
+                          <li class="indredient__list">黑胡椒鹽</li>
+                          <li class="indredient__list">無鹽奶油</li>
+
+                      </ul>
+           
+                  </div>
+              </li>
+
+          </ul>
+          <ul class="food__box breakfast"data-type="breakfast">
+              <li class="container" >
+                  <h3 style="text-align: center;">泡菜豬肉鷹嘴豆漢堡</h3>
+                  <a target="_blank" href="https://www.instagram.com/p/CUwOuTPgkD-/">
+                  <img class="food__img" src="./pictures/food/breakfast/漢堡.png" alt="">
+                  </a>
+                
+                 
+                  <h3 class="pointUp">材料<i class="fal fa-hand-point-up "></i></h3>
+                  <div class="ingredient__box">
+                      <ul class="ingredient__item">
+                          <li class="indredient__list">鷹嘴豆粉</li>
+                          <li class="indredient__list">泡菜</li>
+                          <li class="indredient__list">瘦豬肉</li>
+                          <li class="indredient__list">雞蛋</li>
+                          <li class="indredient__list">營養酵母</li>
+                          <li class="indredient__list">橄欖油</li>
+                          
+                      </ul>
+           
+                  </div>
+              </li>
+
+          </ul>
+        </form>
+        <!-- drink -->
+      <form class="drink food"  data-type="drink">
+          <ul class="food__box drink"  data-type="drink">
+
+              <li class="container" >
+                  <h3>綜合莓果精力湯</h3>
+                  <a target="_blank" href="https://www.youtube.com/watch?v=-iNSJHBZ2MI">
+                  <img class="food__img" src="./pictures/food/Drinks/莓果精力湯.jpg" alt="">
+                  </a>
+                 
+                  <h3 class="pointUp">材料<i class="fal fa-hand-point-up "></i></h3>
+                  <div class="ingredient__box">
+                      <ol  class="ingredient__item">
+                          <li class="indredient__list">綜合莓果</li>
+                          <li class="indredient__list">蘋果</li>
+                          <li class="indredient__list">葡萄</li>
+                          <li class="indredient__list">紫高麗菜</li>
+                          <li class="indredient__list">綜合堅果</li>
+                          <li class="indredient__list">檸檬汁</li>
+                          <li class="indredient__list">水</li>
+                         
+                      </ol>
+           
+                  </div>
+              </li>
+
+          </ul>
+          <ul class="food__box drink"  data-type="drink">
+              <li class="container" >
+                  <h3 style="text-align: center;">豆穀核桃奶</h3>
+                  <a target="_blank" href="https://www.youtube.com/watch?v=cfexAbEQ8CE">
+                  <img class="food__img" src="./pictures/food/Drinks/豆鼓核桃奶.jpg" alt="">
+                  </a>
+                
+                 
+                  <h3 class="pointUp">材料<i class="fal fa-hand-point-up "></i></h3>
+                  <div class="ingredient__box">
+                      <ul class="ingredient__item">
+                          <li class="indredient__list">蒸熟黃豆</li>
+                          <li class="indredient__list">糙米飯</li>
+                          <li class="indredient__list">核桃</li>
+                          <li class="indredient__list">原色冰糖</li>
+                          <li class="indredient__list">熱開水</li>
+                      </ul>
+           
+                  </div>
+              </li>
+
+          </ul>
+          <ul class="food__box drink" data-type="drink">
+              <li class="container" >
+                  <h3 style="text-align: center;">奇亞籽蜂蜜檸檬飲</h3>
+                  <a target="_blank" href="https://icook.tw/recipes/150497">
+                  <img class="food__img" src="./pictures/food/Drinks/奇亞籽檸檬蜂蜜.jpg" alt="">
+                  </a>
+                
+                 
+                  <h3 class="pointUp">材料<i class="fal fa-hand-point-up "></i></h3>
+                  <div class="ingredient__box">
+                      <ul class="ingredient__item">
+                          <li class="indredient__list">奇亞籽</li>
+                          <li class="indredient__list">檸檬</li>
+                          <li class="indredient__list">蜂蜜</li>
+                          <li class="indredient__list">水</li>
+                      </ul>
+           
+                  </div>
+              </li>
+
+          </ul>
+          <ul class="food__box drink"  data-type="drink">
+              <li class="container" >
+                  <h3 style="text-align: center;">ABC果汁</h3>
+                  <a target="_blank" href="https://health.gvm.com.tw/article/78977">
+                  <img class="food__img" src="./pictures/food/Drinks/甜菜根汁.jpg" alt="">
+                  </a>
+                
+                 
+                  <h3 class="pointUp">材料<i class="fal fa-hand-point-up "></i></h3>
+                  <div class="ingredient__box">
+                      <ul class="ingredient__item">
+                          <li class="indredient__list">蘋果</li>
+                          <li class="indredient__list">甜菜根</li>
+                          <li class="indredient__list">紅蘿蔔</li>
+                          <li class="indredient__list">水</li>
+                      </ul>
+           
+                  </div>
+              </li>
+
+          </ul>
+          <ul class="food__box drink"  data-type="drink">
+              <li class="container" >
+                  <h3 style="text-align: center;">黑芝麻香蕉牛奶</h3>
+                  <a target="_blank" href="https://www.nutrition-master.com.tw/portfolio-item/%E8%8A%9D%E9%BA%BB%E9%A6%99%E8%95%89%E7%89%9B%E5%A5%B6/#tab-id-1-active">
+                  <img class="food__img" src="./pictures/food/Drinks/黑芝麻香蕉牛奶.jpg" alt="">
+                  </a>
+                
+                 
+                  <h3 class="pointUp">材料<i class="fal fa-hand-point-up "></i></h3>
+                  <div class="ingredient__box">
+                      <ul class="ingredient__item">
+                          <li class="indredient__list">香蕉</li>
+                          <li class="indredient__list">黑芝麻</li>
+                          <li class="indredient__list">鮮奶</li>
+                          <li class="indredient__list">蜂蜜(可省略)</li>
+
+
+                      </ul>
+           
+                  </div>
+              </li>
+
+          </ul>
+          <ul class="food__box drink"  data-type="drink">
+              <li class="container" >
+                  <h3 style="text-align: center;">酪梨蘋果優酪乳</h3>
+                  <a target="_blank" href="https://iamshino8888.pixnet.net/blog/post/331017113">
+                  <img class="food__img" src="./pictures/food/Drinks/酪梨牛奶.jpg" alt="">
+                  </a>
+                
+                 
+                  <h3 class="pointUp">材料<i class="fal fa-hand-point-up "></i></h3>
+                  <div class="ingredient__box">
+                      <ul class="ingredient__item">
+                          <li class="indredient__list">酪梨</li>
+                          <li class="indredient__list">蘋果</li>
+                          <li class="indredient__list">優酪乳</li>
+                          <li class="indredient__list">蜂蜜(可省略)</li>                          
+                      </ul>
+           
+                  </div>
+              </li>
+
+          </ul>
+      </form>
+        <!-- protein -->
+      <form class="protein food"  data-type="protein">
+          <ul class="food__box protein" >
+
+              <li class="container" >
+                  <h3>香蒜味噌鮭魚酪梨烤蛋</h3>
+                  <a target="_blank" href="https://www.marieclaire.com.tw/beauty/health-fitness/58677?atcr=5b543">
+                  <img class="food__img" src="./pictures/food/high protein/香蒜味噌鮭魚酪梨烤蛋.jpeg" alt="">
+                  </a>
+
+                  <h3 class="pointUp">材料<i class="fal fa-hand-point-up "></i></h3>
+                  <div class="ingredient__box">
+                      <ol  class="ingredient__item">
+                          <li class="indredient__list">鮭魚排</li>
+                          <li class="indredient__list">香蒜味噌醬</li>
+                          <li class="indredient__list">小番茄,毛豆仁</li>
+                          <li class="indredient__list">百合根,南瓜籽</li>
+                          <li class="indredient__list">酪梨</li>
+                          <li class="indredient__list">雞蛋</li>
+                          <li class="indredient__list">紅藜麥</li>
+                          <li class="indredient__list">優格</li>
+                         
+                      </ol>
+           
+                  </div>
+              </li>
+
+          </ul>
+          <ul class="food__box protein" >
+            <li class="container" >
+                  <h3 style="text-align: center;">蒜煎雞柳佐櫛瓜<br> 鴻禧菇藜麥碗</h3>
+                  <a target="_blank" href="https://meet.eslite.com/tw/tc/article/202108230010">
+                  <img class="food__img" src="./pictures/food/high protein/蒜煎紅椒煙燻雞柳 佐煎櫛瓜鴻禧菇藜麥碗.jpg" alt="">
+                  </a>
+                  <h3 class="pointUp">材料<i class="fal fa-hand-point-up "></i></h3>
+                  <div class="ingredient__box">
+                      <ul class="ingredient__item">
+                          <li class="indredient__list">雞胸肉</li>
+                          <li class="indredient__list">番茄</li>
+                          <li class="indredient__list">鴻喜菇</li>
+                          <li class="indredient__list">雞蛋</li>
+                          <li class="indredient__list">紅綠櫛瓜</li>
+                          <li class="indredient__list">義式香料</li>
+                      </ul>
+           
+                  </div>
+              </li>
+
+          </ul>
+          <ul class="food__box protein">
+              <li class="container" >
+                  <h3 style="text-align: center;">太陽蛋蝦仁拌豆腐</h3>
+                  <a target="_blank" href="https://www.marieclaire.com.tw/beauty/health-fitness/57822?atcr=0becc">
+                  <img class="food__img" src="./pictures/food/high protein/太陽蛋蝦仁拌豆腐.jpeg" alt="">
+                  </a>
+                
+                 
+                  <h3 class="pointUp">材料<i class="fal fa-hand-point-up "></i></h3>
+                  <div class="ingredient__box">
+                      <ul class="ingredient__item">
+                          <li class="indredient__list">板豆腐</li>
+                          <li class="indredient__list">蛋</li>
+                          <li class="indredient__list">蝦仁</li>
+                          <li class="indredient__list">蠔油</li>
+                          <li class="indredient__list">醬油</li>
+                          <li class="indredient__list">大蒜</li>
+                          <li class="indredient__list">辣椒</li>
+                          <li class="indredient__list">白芝麻</li>
+                      </ul>
+           
+                  </div>
+              </li>
+
+          </ul>
+          <ul class="food__box protein" >
+              <li class="container" >
+                  <h3 style="text-align: center;">吻仔魚西班牙烘蛋</h3>
+                  <a target="_blank" href="https://life.anyongfresh.com/recipe-whitebait-omelette/">
+                  <img class="food__img" src="./pictures/food/high protein/吻仔魚西班牙烘蛋.jpg" alt="">
+                  </a>
+                  <h3 class="pointUp">材料<i class="fal fa-hand-point-up "></i></h3>
+                  <div class="ingredient__box">
+                      <ul class="ingredient__item">
+                          <li class="indredient__list">吻仔魚</li>
+                          <li class="indredient__list">蛋</li>
+                          <li class="indredient__list">紅黃甜椒</li>
+                          <li class="indredient__list">洋蔥</li>
+                          <li class="indredient__list">蘑菇</li>
+                          <li class="indredient__list">鮮奶,起司</li>
+                          <li class="indredient__list">起司絲</li>
+                          <li class="indredient__list">迷迭香</li>
+                      </ul>
+           
+                  </div>
+              </li>
+
+          </ul>
+          <ul class="food__box protein" >
+              <li class="container" >
+                  <h3 style="text-align: center;">泰式優格蝦仁沙拉三明治</h3>
+                  <a target="_blank" href="https://icook.tw/recipes/344495">
+                  <img class="food__img" src="./pictures/food/high protein/泰式優格蝦仁沙拉三明治.jpg" alt="">
+                  </a>
+                  <h3 class="pointUp">材料<i class="fal fa-hand-point-up "></i></h3>
+                  <div class="ingredient__box">
+                      <ul class="ingredient__item">
+                          <li class="indredient__list">全麥土司</li>
+                          <li class="indredient__list">辣椒,大蒜</li>
+                          <li class="indredient__list">蝦仁</li>
+                          <li class="indredient__list">生菜</li>
+                          <li class="indredient__list">花生</li>
+                          <li class="indredient__list">無糖優格</li>
+                          <li class="indredient__list">檸檬汁魚露</li>
+                          <li class="indredient__list">香菜</li>
+
+
+                      </ul>
+           
+                  </div>
+              </li>
+
+          </ul>
+          <ul class="food__box protein" >
+              <li class="container" >
+                  <h3 style="text-align: center;">鮮蔬烤鮭魚</h3>
+                  <a target="_blank" href="https://icook.tw/recipes/219470">
+                  <img class="food__img" src="./pictures/food/high protein/鮭魚烤蔬菜.jpg" alt="">
+                  </a>
+                  <h3 class="pointUp">材料<i class="fal fa-hand-point-up "></i></h3>
+                  <div class="ingredient__box">
+                      <ul class="ingredient__item">
+                          <li class="indredient__list">鮭魚</li>
+                          <li class="indredient__list">綠花椰</li>
+                          <li class="indredient__list">洋蔥</li>
+                          <li class="indredient__list">紅黃甜椒</li>                          
+                          <li class="indredient__list">綠花椰</li>                          
+                          <li class="indredient__list">橄欖油</li>                          
+                          <li class="indredient__list">番茄</li>                          
+                          <li class="indredient__list">胡椒粒</li>                          
+                      </ul>
+           
+                  </div>
+              </li>
+
+          </ul>
+      </form>
+        <!-- carbonhydrate -->
+      <form class="carbonhydrate food"  data-type="carbonhydrate">
+          <ul class="food__box carbonhydrate" >
+
+              <li class="container" >
+                  <h3>烤南瓜</h3>
+                  <a target="_blank" href="https://icook.tw/recipes/249295">
+                  <img class="food__img" src="./pictures/food/carbonhydrate/烤南瓜.jpg" alt="">
+                  </a>
+
+                  <h3 class="pointUp">材料<i class="fal fa-hand-point-up "></i></h3>
+                  <div class="ingredient__box">
+                      <ol  class="ingredient__item">
+                          <li class="indredient__list">南瓜</li>
+                          <li class="indredient__list">蜂蜜</li>
+                          <li class="indredient__list">橄欖油</li>
+                          <li class="indredient__list">鹽</li>
+                          <li class="indredient__list">巴西里</li>
+
+                         
+                      </ol>
+           
+                  </div>
+              </li>
+
+          </ul>
+          <ul class="food__box carbonhydrate" >
+            <li class="container" >
+                  <h3 style="text-align: center;">鮮蝦馬鈴薯煎餅</h3>
+                  <a target="_blank" href="https://www.womenshealthmag.com/tw/food-nutrition/recipes/a33937438/shrimp-potato-pancakes/">
+                  <img class="food__img" src="./pictures/food/carbonhydrate/鮮蝦馬鈴薯煎餅.jpg" alt="">
+                  </a>
+                  <h3 class="pointUp">材料<i class="fal fa-hand-point-up "></i></h3>
+                  <div class="ingredient__box">
+                      <ul class="ingredient__item">
+                          <li class="indredient__list">糖</li>
+                          <li class="indredient__list">醬油,麻油</li>
+                          <li class="indredient__list">米酒或開水</li>
+                          <li class="indredient__list">韓式辣醬</li>
+                          <li class="indredient__list">馬鈴薯,紅蘿蔔</li>
+                          <li class="indredient__list">蝦仁</li>
+                          <li class="indredient__list">雞蛋</li>
+                          <li class="indredient__list">青蔥,洋蔥</li>
+                      </ul>
+           
+                  </div>
+              </li>
+
+          </ul>
+          <ul class="food__box carbonhydrate">
+              <li class="container" >
+                  <h3 style="text-align: center;">迷迭香烤雞腿佐馬鈴薯</h3>
+                  <a target="_blank" href="https://www.womenshealthmag.com/tw/food-nutrition/recipes/a33242446/roasted-chicken-legs-with-rosemary-and-potatoes/">
+                  <img class="food__img" src="./pictures/food/carbonhydrate/迷迭香烤雞腿佐馬鈴薯.jpg" alt="">
+                  </a>
+                  <h3 class="pointUp">材料<i class="fal fa-hand-point-up "></i></h3>
+                  <div class="ingredient__box">
+                      <ul class="ingredient__item">
+                          <li class="indredient__list">洋蔥</li>
+                          <li class="indredient__list">馬鈴薯</li>
+                          <li class="indredient__list">橄欖油</li>
+                          <li class="indredient__list">迷迭香</li>
+                          <li class="indredient__list">黑胡椒粉</li>
+                          <li class="indredient__list">雞腿</li>
+                          <li class="indredient__list">香菜粉</li>
+                      </ul>
+           
+                  </div>
+              </li>
+
+          </ul>
+          <ul class="food__box carbonhydrate" >
+              <li class="container" >
+                  <h3 style="text-align: center;">辣炒蕈菇蓮藕</h3>
+                  <a target="_blank" href="https://www.hokto-kinoko.com.tw/hoktogoodblog/%E8%8F%87%E8%8F%87%E9%A3%9F%E8%AD%9C/%E8%BE%A3%E7%82%92%E8%95%88%E8%8F%87%E8%93%AE%E8%97%95/">
+                  <img class="food__img" src="./pictures/food/carbonhydrate/辣炒蕈菇蓮藕.png" alt="">
+                  </a>
+                  <h3 class="pointUp">材料<i class="fal fa-hand-point-up "></i></h3>
+                  <div class="ingredient__box">
+                      <ul class="ingredient__item">
+                          <li class="indredient__list">蓮藕</li>
+                          <li class="indredient__list">紅黃甜椒</li>
+                          <li class="indredient__list">青辣椒</li>
+                          <li class="indredient__list">大蒜</li>
+                          <li class="indredient__list">白芝麻,芝麻油</li>
+                          <li class="indredient__list">蠔油、醬油</li>
+                          <li class="indredient__list">糖,米酒</li>
+                          <li class="indredient__list">鴻喜菇,雪白菇,舞菇</li>
+                      </ul>
+           
+                  </div>
+              </li>
+
+          </ul>
+          <ul class="food__box carbonhydrate" >
+              <li class="container" >
+                  <h3 style="text-align: center;">芋香雞肉捲</h3>
+                  <a target="_blank" href="https://health.tvbs.com.tw/nutrition/304745">
+                  <img class="food__img" src="./pictures/food/carbonhydrate/芋頭.jpg" alt="">
+                  </a>
+                  <h3 class="pointUp">材料<i class="fal fa-hand-point-up "></i></h3>
+                  <div class="ingredient__box">
+                      <ul class="ingredient__item">
+                          <li class="indredient__list">芋頭</li>
+                          <li class="indredient__list">去骨雞腿肉</li>
+                          <li class="indredient__list">蒜末</li>
+                          <li class="indredient__list">洋蔥,青蔥絲</li>
+                          <li class="indredient__list">辣椒絲</li>
+                          <li class="indredient__list">料理酒</li>
+                          <li class="indredient__list">地瓜粉</li>
+                          <li class="indredient__list">胡椒鹽</li>
+
+
+                      </ul>
+           
+                  </div>
+              </li>
+
+          </ul>
+          <ul class="food__box carbonhydrate" >
+              <li class="container" >
+                  <h3 style="text-align: center;">地瓜煨雞</h3>
+                  <a target="_blank" href="https://leeyihugh.com/blog/post/187734493">
+                  <img class="food__img" src="./pictures/food/carbonhydrate/地瓜煨雞.jpg" alt="">
+                  </a>
+                  <h3 class="pointUp">材料<i class="fal fa-hand-point-up "></i></h3>
+                  <div class="ingredient__box">
+                      <ul class="ingredient__item">
+                          <li class="indredient__list">雞腿肉</li>
+                          <li class="indredient__list">地瓜</li>
+                          <li class="indredient__list">洋蔥</li>
+                          <li class="indredient__list">紅蘿蔔</li>                          
+                          <li class="indredient__list">辣椒</li>                          
+                          <li class="indredient__list">蔥</li>                          
+                          <li class="indredient__list">蒜頭</li>                          
+                      </ul>
+           
+                  </div>
+              </li>
+
+          </ul>
+      </form>
+        <!-- sweet -->
+      <form class="sweet food"  data-type="sweet">
+          <ul class="food__box sweet" >
+
+              <li class="container" >
+                  <h3>生酮巧克力蛋糕</h3>
+                  <a target="_blank" href="https://www.vogue.com.tw/feature/content-37777">
+                  <img class="food__img" src="./pictures/food/dessert/巧克力蛋糕.jpg" alt="">
+                  </a>
+
+                  <h3 class="pointUp">材料<i class="fal fa-hand-point-up "></i></h3>
+                  <div class="ingredient__box">
+                      <ol  class="ingredient__item">
+                          <li class="indredient__list">蛋黃</li>
+                          <li class="indredient__list">無鹽奶油</li>
+                          <li class="indredient__list">赤藻糖醇</li>
+                          <li class="indredient__list">杏仁粉</li>
+                          <li class="indredient__list">無糖杏仁奶</li>
+                          <li class="indredient__list">蛋白</li>
+                          <li class="indredient__list">檸檬汁</li>
+                          <li class="indredient__list">100%苦甜巧克力磚</li>
+
+                         
+                      </ol>
+           
+                  </div>
+              </li>
+
+          </ul>
+          <ul class="food__box sweet" >
+            <li class="container" >
+                  <h3 style="text-align: center;">藍莓天使蛋糕</h3>
+                  <a target="_blank" href="https://www.vogue.com.tw/feature/content-37777">
+                  <img class="food__img" src="./pictures/food/dessert/藍莓蛋糕.jpg" alt="">
+                  </a>
+                  <h3 class="pointUp">材料<i class="fal fa-hand-point-up "></i></h3>
+                  <div class="ingredient__box">
+                      <ul class="ingredient__item">
+                          <li class="indredient__list">蛋白</li>
+                          <li class="indredient__list">塔塔粉</li>
+                          <li class="indredient__list">甜菊糖</li>
+                          <li class="indredient__list">杏仁粉</li>
+                          <li class="indredient__list">椰子粉</li>
+                          <li class="indredient__list">藍莓</li>
+                          <li class="indredient__list">鹽</li>
+                          <li class="indredient__list">水</li>
+                      </ul>
+           
+                  </div>
+              </li>
+
+          </ul>
+          <ul class="food__box sweet">
+              <li class="container" >
+                  <h3 style="text-align: center;">南瓜燕麥塔</h3>
+                  <a target="_blank" href="https://icook.tw/recipes/367954">
+                  <img class="food__img" src="./pictures/food/dessert/南瓜燕麥塔.jpg" alt="">
+                  </a>
+                  <h3 class="pointUp">材料<i class="fal fa-hand-point-up "></i></h3>
+                  <div class="ingredient__box">
+                      <ul class="ingredient__item">
+                          <li class="indredient__list">香蕉</li>
+                          <li class="indredient__list">燕麥片</li>
+                          <li class="indredient__list">南瓜泥</li>
+                          <li class="indredient__list">豆漿</li>
+                          <li class="indredient__list">蛋</li>
+                          <li class="indredient__list">燕麥粉</li>
+                      </ul>
+           
+                  </div>
+              </li>
+
+          </ul>
+          <ul class="food__box sweet" >
+              <li class="container" >
+                  <h3 style="text-align: center;">抹茶海綿蛋糕</h3>
+                  <a target="_blank" href="https://icook.tw/recipes/198996">
+                  <img class="food__img" src="./pictures/food/dessert/抹茶海綿蛋糕.jpg" alt="">
+                  </a>
+                  <h3 class="pointUp">材料<i class="fal fa-hand-point-up "></i></h3>
+                  <div class="ingredient__box">
+                      <ul class="ingredient__item">
+                          <li class="indredient__list">蕎麥粉</li>
+                          <li class="indredient__list">蛋黃</li>
+                          <li class="indredient__list">無麩泡打粉</li>
+                          <li class="indredient__list">米椰奶</li>
+                          <li class="indredient__list">抹茶粉</li>
+                          <li class="indredient__list">香蕉</li>
+                          <li class="indredient__list">檸檬汁</li>
+                          <li class="indredient__list">冰蛋白</li>
+                      </ul>
+           
+                  </div>
+              </li>
+
+          </ul>
+          <ul class="food__box sweet" >
+              <li class="container" >
+                  <h3 style="text-align: center;">香蕉鬆餅</h3>
+                  <a target="_blank" href="https://ifoodreal.com/healthy-banana-pancakes/">
+                  <img class="food__img" src="./pictures/food/dessert/香蕉鬆餅.jpg" alt="">
+                  </a>
+                  <h3 class="pointUp">材料<i class="fal fa-hand-point-up "></i></h3>
+                  <div class="ingredient__box">
+                      <ul class="ingredient__item">
+                          <li class="indredient__list">香蕉</li>
+                          <li class="indredient__list">蛋</li>
+                          <li class="indredient__list">鮮奶</li>
+                          <li class="indredient__list">泡打粉</li>
+                          <li class="indredient__list">小蘇打</li>
+                          <li class="indredient__list">全麥麵粉</li>
+                          <li class="indredient__list">油</li>
+
+
+                      </ul>
+           
+                  </div>
+              </li>
+
+          </ul>
+          <ul class="food__box sweet" >
+              <li class="container" >
+                  <h3 style="text-align: center;">奇亞籽香蕉蜂蜜磅蛋糕</h3>
+                  <a target="_blank" href="https://icook.tw/recipes/107114">
+                  <img class="food__img" src="./pictures/food/dessert/奇亞籽香蕉蜂蜜磅蛋糕.png" alt="">
+                  </a>
+                  <h3 class="pointUp">材料<i class="fal fa-hand-point-up "></i></h3>
+                  <div class="ingredient__box">
+                      <ul class="ingredient__item">
+                          <li class="indredient__list">香蕉</li>
+                          <li class="indredient__list">蛋</li>
+                          <li class="indredient__list">全麥麵粉</li>
+                          <li class="indredient__list">優格</li>                          
+                          <li class="indredient__list">小蘇打粉，杏仁粉</li>                          
+                          <li class="indredient__list">奇亞籽</li>                          
+                          <li class="indredient__list">蜂蜜，紅糖</li>                          
+                          <li class="indredient__list">葡萄籽油</li>                          
+                      </ul>
+           
+                  </div>
+              </li>
+
+          </ul>
+      </form>
+
+
+
+
+
+    </section>
+    <img class="top" src="./icons/top.png" alt="">
+
+</section>
+
+
+
+
+
+<script src="./js/app.js"></script>
+</body>
+</html>
